@@ -1,0 +1,288 @@
+{
+    "country": "智利",
+    "group_info": {
+        "event_end_time": "",
+        "deliver_end_time": "",
+        "group_number_dec": "",
+        "owner_discount_price": 0,
+        "count_down": 0,
+        "group_initiator_benifit": "",
+        "event_start_time": "",
+        "new_user_only": 0,
+        "group_rule_img": "",
+        "group_h5_url": "",
+        "deliver_start_time": ""
+    },
+    "integral_price": 0,
+    "free_shipping": 0,
+    "delivery_style": "1小时达",
+    "product_need_level": 0,
+    "product_share_icon": "https://j-image.missfresh.cn/img_20171028203137142.png",
+    "price": 5990,
+    "exchange_times_per_day": 0,
+    "id": 13853,
+    "sku": "p-YShbzlclz-1h",
+    "stock": 0,
+    "brand": "",
+    "integral_product_type": 0,
+    "sales_volume": "15806",
+    "image": "https://image.missfresh.cn/705880b301704e159b9e1c88bc37a729.jpg",
+    "images": [
+        "https://image.missfresh.cn/925a53b3581d4953b3d4e9c546486e33.jpg",
+        "https://image.missfresh.cn/4b43643726e5495ebda04c485c55e75c.jpg",
+        "https://image.missfresh.cn/21650af2dd9044d09fe468d38d434b34.jpg"
+    ],
+    "is_vip": 1,
+    "weight": "500g*1盒",
+    "seckill_limit": 0,
+    "pack": "普装",
+    "unit": "1盒",
+    "vip_card": {
+        "is_opened": 1,
+        "back_cash_text": "购买该商品可省#_$10#_$元+返#_$2.49#_$元",
+        "icon_img": "https://j-image.missfresh.cn/img_20171020225432185.png"
+    },
+    "subtitle": "可用商品券兑换",
+    "name": "【现售】智利XL级车厘子500g",
+    "market_price": 0,
+    "nationwide": 0,
+    "vip_price": 5990,
+    "delivery_mode": 1,
+    "storage_code": "MRYXSH,MRYXSZ,MRYXSHW,",
+    "description": [
+        "注意事项：\r",
+        "1）该商品可正常购买，也可以进行商品券兑换，已购买的商品券可在app“我的”-“商品券”查看；\r",
+        "2）可以自即日至12月31日在商城兑换，兑换方式和普通商品券兑换方式一样；\r",
+        "3）兑换时，每1张商品券需分别加购商城内其他商品满39元，整单包邮，不满39元，则需运费；\r",
+        "4）该券只能兑换该规格商品，不能兑换其他商品（其他级别车厘子）；\r",
+        "5）生鲜预售商品，不支持退换，请谅解。"
+    ],
+    "promote_tag": "https://j-image.missfresh.cn/img_20171110161256993.png",
+    "product_created_at": "2017-11-05 15:44:38",
+    "is_exchange_product": 0,
+    "is_present": 0,
+    "exchange_times_per_period": 0,
+    "product_chrome": 1,
+    "promotion_tag": "不可用红包",
+    "can_use_voucher": 0,
+    "storage_method": "冷藏",
+    "quantity": 1,
+    "vip_exclusive": 2,
+    "cart_btn_name": "到货提醒",
+    "share_info": {
+        "wx_share_type": 0,
+        "image_url": "https://image.missfresh.cn/887aa957074b4b20b7607edf4885f0eb.jpg",
+        "sina_url": "https://s.missfresh.cn/s/13853/32757143_dc99679",
+        "wx_url": "https://as-vip.missfresh.cn/s/pd?a=p-YShbzlclz-1h&b=32757143_dc99&t=679&v=a1f1&u=32757143",
+        "friend_share_type": 1,
+        "title": "【好友力荐】我发现了好东西！推荐你「【现售】智利XL级车厘子500g」",
+        "content": "可用商品券兑换",
+        "friend_url": "https://as-vip.missfresh.cn/s/pd?a=p-YShbzlclz-1h&b=32757143_dc99&t=679&v=a1f1&u=32757143"
+    },
+    "presale_type": 0,
+    "buy_permission": 0,
+    "qa_info": [
+        {
+            "picUrl": "http://missfresh-asvip-develop-common.ufile.ucloud.cn/wms_1511771701739850196.png"
+        }
+    ],
+    "storage_time": "到货可立即食用",
+    "member_level": 1,
+    "vip_price_pro": {
+        "price_up": {
+            "show_type": 1,
+            "color": 16730257,
+            "price": 5990,
+            "name": "商城价"
+        },
+        "price_down": {
+            "show_type": 1,
+            "color": 16301056,
+            "price": 4990,
+            "name": "优享会员价",
+            "is_ex_price": 1
+        }
+    },
+    "instruction": [
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/31422925c1de42138e2c57c374a3613c.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/61bd8bc308ec44d7a9a9e8c5ffbc2175.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/42e78d54f3c74fdeb3d72c36527ba821.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/1774e7c9f13f43649d68e4c0afc2cf31.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/b68ac5c0d3514afd9ffe37d18cb89ed2.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/60bafff3ba72482c9e29979e7dc25375.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/35c6ba1069554bd192c4afcb62cbcf3d.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/2eae087c9372419a83d2838eb94eaa88.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/2717c6a87b574c73aa71f859253dd079.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/610c5b4fff124af387ad2726f6715bc9.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/47bf02b8e8394424b643995ad07b29cb.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/efaac6e2813a4bf0839128e6b94a1ccc.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/dbebe6c287524242904d21d8db5d1a95.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/d2e196c910c14111a918cc55d67bcc3d.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/f86b8e0955d14e8c86bc40100cc4b6f0.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/5f623b864d654cebaea4c67b2e81f007.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/07fcfb016222401b83a5f3491228b42f.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/44125fd6241247d2ba750c522303686f.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        }
+    ],
+    "cart_image": "https://image.missfresh.cn/887aa957074b4b20b7607edf4885f0eb.jpg",
+    "delivery_mode_name": "1小时达",
+    "product_share_info_v2": {
+        "product_share_need_price": 1,
+        "share_product_text": "已经有4682人分享了该商品",
+        "product_bright_spot": "亮点",
+        "qr_size": 77,
+        "product_rule_is_show": 1,
+        "show_share_img": "http://missfresh-asschool-develop-common.ufile.ucloud.com.cn/img_20170504191635971.png",
+        "preview_show": 0,
+        "share_bt_bg_img": "https://j-image.missfresh.cn/img_20171102215404987.png",
+        "product_share_backup_up": "https://j-image.missfresh.cn/img_20171029161039259.png",
+        "share_bg_title": "可用商品券兑换",
+        "benefit_status": 0,
+        "share_s_p_img": [
+            "https://j-image.missfresh.cn/img_20171029215450695.png"
+        ],
+        "prodcut_share_bg_login_text": "登陆方可享受奖励,立即登陆",
+        "share_product_img": "https://j-image.missfresh.cn/img_20171029215450695.png",
+        "preview_need_qrcode": 1,
+        "benefit_get_txt": "已获得",
+        "share_s_p_txt": "点击分享",
+        "prodcut_share_bg_img": "http://missfresh-asschool-develop-common.ufile.ucloud.com.cn/img_20170327161934693.jpg",
+        "prodcut_share_bg_text": "分享商品不仅有机会得15元红包\n好友下单购买，更有5%的返现等你拿",
+        "qr_y": 13,
+        "qr_x": 74,
+        "product_detail_is_show": 1,
+        "product_integarl_explain": "分享后点击链接，随机得红包，会员分享商品，非会员下单签收后，会员得5%返现",
+        "product_integarl_icon": "http://missfresh-asschool-develop-common.ufile.ucloud.com.cn/img_20170215184830712.png",
+        "product_integarl_text": "分享得红包，又得返现"
+    },
+    "enable_mrd": 0,
+    "exchange_limit_day": 0,
+    "promotion": [
+        "实付满39包邮"
+    ]
+}
