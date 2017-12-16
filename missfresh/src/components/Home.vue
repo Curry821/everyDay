@@ -60,22 +60,9 @@
 										<div class="content-wrap">
 											<!-- 轮播图 -->
 											<swiper :options="swiperOption" ref="hotSwiper">
-												<swiper-slide>
-													<img src="https://j-image.missfresh.cn/img_20171115210504508.jpg">
+												<swiper-slide v-for="(img,index) in banners">
+													<img :src="img.path">
 												</swiper-slide>
-												<swiper-slide>
-													<img src="https://j-image.missfresh.cn/img_20171114001522110.jpg">
-												</swiper-slide>
-												<swiper-slide>
-													<img src="https://j-image.missfresh.cn/img_20171116020025770.jpg">
-												</swiper-slide>
-												<swiper-slide>
-													<img src="https://j-image.missfresh.cn/img_20171114111240789.jpg">
-												</swiper-slide>
-												<swiper-slide>
-													<img src="https://j-image.missfresh.cn/img_20171115210504508.jpg">
-												</swiper-slide>
-
 											</swiper>
 											<!-- 商品列表 -->
 											<div class="product-group">
@@ -86,9 +73,7 @@
 															<img class="item-disc-img" src="" v-lazy="item.promote_tag" v-if="item.promote_tag != undefined">
 															<!-- 商品图片 -->
 															<div class="item-img">
-																<router-link :to="'/detail/' + item.sku ">
-																	<img src="" v-lazy="item.image">	
-																</router-link>
+																<img src="" v-lazy="item.image" @click="push(item.sku)">
 															</div>
 															<!-- 商品信息 -->
 															<div class="item-info">
@@ -109,7 +94,7 @@
 																	</div>
 																</div>
 																<div class="price-num">
-																	<img v-if="item.nuo == 0" src="../assets/img_20170425134548759.png" title="img_20170425134548759.png" alt="小购物车" @click="add(item)">
+																	<img v-if="item.buy_permission == 0" src="../assets/img_20170425134548759.png" title="img_20170425134548759.png" alt="小购物车" @click="add(item)">
 																	<div v-else >
 																		<span class="jian" @click="down(id)"></span>
 																		<span class="number-item">{{item.nuo}}</span>
@@ -224,9 +209,11 @@
 		},
 		data(){
 			return{
-				url:'./static/home.json',
+				url:'./static/json/home.json',
 				categoryList:[],
 				productList:[],
+				banners:[],
+				// 轮播图属性
 				swiperOption:{
 					notNextTick:true,
 					autoplay:2500,
@@ -243,12 +230,13 @@
 		},
 		created(){
 			this.$http.get(this.url,{}).then((res)=>{
+				// 导航数据
 				this.categoryList = res.data.category_list;
+				// 商品列表
 				this.productList = res.data.product_list.products;
+				// 轮播图数据
 				this.banners = res.data.product_list.banner;
-				console.log(res.data.category_list);
-				console.log(res.data.product_list.products);
-				console.log(res.data.product_list.banner);
+				console.log(this.banners)
 				//如果购物车有产品 则显示对应产品数量
 				if(this.$store.state.orderList.length>0){
 					for(var n in this.$store.getters.getOrderList){
@@ -284,6 +272,15 @@
 			},
 			fn(){
 				console.log(this.searchTxt.length)
+			},
+			// 点击图片跳转商品详情
+			push(sku){
+				this.$router.push({
+					path:'/detail',
+					query:{
+						sku: sku
+					}
+				})
 			},
 			//下拉刷新
 			infinite(done){

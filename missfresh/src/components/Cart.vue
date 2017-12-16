@@ -68,7 +68,7 @@
 											<div class="price-num cart-price-num">
 												<div>
 													<span class="jian" @click="down(item)"></span>
-													<span class="text">{{ item.nuo }}</span>
+													<span class="text">{{ item.buy_permission }}</span>
 													<span class="jia" @click="up(item.sku)"></span>
 												</div>
 											</div>
@@ -229,7 +229,7 @@
 			},
 			down(item) {
 				this.$store.dispatch('down', item)
-				if(item.nuo == 0){
+				if(item.buy_permission == 0){
 					this.isShow = true;
 				}
 			},
@@ -238,7 +238,7 @@
 				this.isShow = false;
 			},
 			hide(item) {
-				item.nuo = 1;
+				item.buy_permission = 1;
 				this.isShow = false;
 			}
 		}

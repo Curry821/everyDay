@@ -24,7 +24,7 @@ export default new Vuex.Store({
 			for(let n of state.orderList) {
 				if(n.sku == item.sku) {
 					isExist = true;
-					n.nuo++;
+					n.buy_permission++;
 					break;
 				}
 			}
@@ -40,7 +40,7 @@ export default new Vuex.Store({
 					vip_price_pro:item.vip_price_pro,
 					price:item.price,
 					image:item.image,
-					nuo:1 
+					buy_permission:1 
 				}
 				state.orderList.push(order)
 			}
@@ -49,7 +49,7 @@ export default new Vuex.Store({
 		UP(state, sku){
 			for(let item of state.orderList) {
 				if(item.sku == sku){
-					item.nuo++;
+					item.buy_permission++;
 					break;
 				}
 			}
@@ -58,7 +58,7 @@ export default new Vuex.Store({
 		DOWN(state, item){
 			for(let temp of state.orderList) {
 				if(temp.sku == item.sku){
-					temp.nuo--;
+					temp.buy_permission--;
 					break;
 				}
 			}
@@ -91,7 +91,7 @@ export default new Vuex.Store({
 		totalCount(state) {
 			let resultTotalCount = 0
 			for(let item of state.orderList) {
-				resultTotalCount += Number(item.nuo)
+				resultTotalCount += Number(item.buy_permission)
 			}
 			return resultTotalCount
 		},
@@ -99,7 +99,7 @@ export default new Vuex.Store({
 		totalPrice(state) {
 			let resultTotalPrice = 0
 			for(let item of state.orderList) {
-				resultTotalPrice += Number(item.nuo * (item.vip_price_pro.price_down.price/100))
+				resultTotalPrice += Number(item.buy_permission * (item.vip_price_pro.price_down.price/100))
 			}
 			return resultTotalPrice
 		}
