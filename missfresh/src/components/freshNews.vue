@@ -52,7 +52,7 @@
 		data() {
 			return{
 				/*返回请求的数据*/
-				url:'./static/freshNew.json',
+				url:'./static/json/freshNew.json',
 				proList:[]
 			};
 		},

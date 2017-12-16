@@ -165,7 +165,6 @@
 	import navItem from './navItem'
 	import listItem from './listItem'
 	import typeItem from './typeItem'
-	// import detail from './detail'
 	import {swiper,swiperSlide} from 'vue-awesome-swiper'
 	export default{
 		name:'Home',

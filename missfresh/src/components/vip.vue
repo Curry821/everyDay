@@ -91,7 +91,7 @@
 	export default{
 		data(){
 			return{
-				url:'./static/vip.json',
+				url:'./static/json/vip.json',
 				vip_List:[]
 			};
 		},
