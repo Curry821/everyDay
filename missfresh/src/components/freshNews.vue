@@ -1,6 +1,6 @@
 <template>
 <div id="freshNews">
-	<div class="fresh-news">
+	<scroller class="fresh-news" on-refresh="refresh" :on-infinite="infinite" ref="myscroller">
 		<!-- 头部小白条 -->
 		<div class="fresh-news-header">
 
@@ -12,17 +12,18 @@
 					<div class="vonten" >
 						<div class="content">
 							<a :href="item.link">
-							<img src="" v-lazy="item.img">
-							<!--滤镜图 -->
+							<img :src="item.img">
+
+						<!--滤镜图 -->
 							<div class="bg"><img src="src/assets/opctiv.png"></div>
-							<!-- 右上角 -->
+						<!-- 右上角 -->
 							<div class="fresh-news-article-info-text">
 								<p>教你做菜</p>
 							</div>
 							</a>
 						<!-- 小心心 -->
 						<div class="i-like">
-							<img src="src/assets/data-image-png;base… (1).png" style="margin:0;">
+							<img src="src/assets/data-image-png;base… (1).png">
 							<!-- 喜欢 -->
 							<span>{{item.like}}</span>
 						</div>
@@ -44,7 +45,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</scroller>
 </div>
 </template>
 <script>
@@ -52,10 +53,62 @@
 		data() {
 			return{
 				/*返回请求的数据*/
-				url:'./static/json/freshNew.json',
-				proList:[]
+				url:'./static/freshNew.json',
+				proList:[],
+				noData: ''
 			};
 		},
+		// ready() {
+  //     for (let i = 1; i <= 20; i++) {
+  //       this.items.push(i + ' - keep walking, be 2 with you.')
+  //     }
+  //     this.top = 1
+  //     this.bottom = 20
+
+  //     setTimeout(() => {
+  //        下面2种方式都可以调用 resize 方法 
+  //       // 1. use scroller accessor
+  //       $scroller.get('myScroller').resize()
+
+  //       // 2. use component ref
+  //       // this.$refs.my_scroller.resize()
+  //     })
+  //   },
+
+		methods:{
+			infinite(done){
+				console.log(this.noData);
+				if(this.noData){
+					setTimeout( ()=> {
+						this.$refs.myscroller.finishInfinite(2);
+					})
+					return;
+				}
+				let self = this;
+				let start = this.proList.length;
+				setTimeout( ()=> {
+					for(let i = start + 1; i < start + 0; i++){
+						self.proList.push(i);
+					}
+					if(start > 2) {
+						self.noData = '没有更多数据'
+					}
+					self.$refs.myscroller.resize();
+					done()
+				},1500)
+
+			},
+		 refresh(done) {
+		     setTimeout(() => {
+		       let start = this.top - 1
+		       for (let i = start; i > start - 10; i--) {
+		         this.proList.splice(0, 0, i + ' - keep walking, be 2 with you.')
+		       }
+		       this.top = this.top - 10;
+		       done()
+		     }, 1500)
+		   },
+	},
 		created(){
 			// 使用axio 插件请求数据
 			this.$http.get(this.url).then((res)=>{
@@ -64,6 +117,11 @@
 			});
 		},
 		mounted(){
+			   for (let i = 1; i <= 20; i++) {
+        	 this.proList.push(i  + ' - keep walking, be 2 with you.')
+       }
+       this.top = 1,
+       this.bottom = 20,
 			(function (doc, win) {
 			  var docEl = win.document.documentElement;
 			  var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
@@ -121,7 +179,6 @@ div{
 	height: 100%;
 	padding: 0 0.9375rem;
     margin-bottom: 0.625rem;
-    background-color: #fff;
 }
 /*头部小白条*/
 .fresh-news-header{
@@ -144,7 +201,7 @@ div{
 }
 .fresh-news-article-info .content img{
 	width: 100%;
-	margin: 0.625rem 0 0.625rem 0;
+	/*margin: 0.625rem 0 0.625rem 0;*/
    border-radius: 0.1875rem;
 
 }
@@ -202,7 +259,7 @@ div{
 	position: absolute;
 	width: 100%;
 	height: 5.5rem;
-    bottom: 0.3rem;
+    bottom: 0rem;
     border-radius: 0.1875rem;
     left:0;
 }

@@ -18,6 +18,8 @@ import mylist from '@/components/mylist'
 import kefu from "@/components/kefu"
 //商品详情
 import detail from "@/components/detail"
+// login
+import login from "@/components/login"
 
 Vue.use(Router)
 
@@ -81,6 +83,10 @@ export default new Router({
         {
             path:"/mylist",
             component:mylist
+        },
+        {
+            path:'/login',
+            component:"login"
         }
         ]
     }
