@@ -1,0 +1,203 @@
+{
+    "country": "中国",
+    "group_info": {
+        "event_end_time": "",
+        "deliver_end_time": "",
+        "group_number_dec": "",
+        "owner_discount_price": 0,
+        "count_down": 0,
+        "group_initiator_benifit": "",
+        "event_start_time": "",
+        "new_user_only": 0,
+        "group_rule_img": "",
+        "group_h5_url": "",
+        "deliver_start_time": ""
+    },
+    "integral_price": 0,
+    "free_shipping": 0,
+    "redpackage_list": [
+        {
+            "redpackage_text": "使用满119元减20元红包后折合最低¥【8.21】",
+            "savePrice": 821
+        }
+    ],
+    "delivery_style": "1小时达",
+    "product_need_level": 0,
+    "product_share_icon": "https://j-image.missfresh.cn/img_20171028203137142.png",
+    "price": 1190,
+    "exchange_times_per_day": 0,
+    "promote_tag_new": "",
+    "id": 12817,
+    "sku": "p-sgjghhmp25g",
+    "stock": 14,
+    "brand": "",
+    "integral_product_type": 0,
+    "sales_volume": "47562",
+    "image": "https://image.missfresh.cn/da19d0bb88c94cf1997129800a2b63f9.jpg",
+    "images": [
+        "https://image.missfresh.cn/8547116699fb45c28027bf18b0a4d9b1.jpg",
+        "https://image.missfresh.cn/43ff3957df1f43c5836c71ca25199d5b.jpg",
+        "https://image.missfresh.cn/6e0c504437bf4af8be49c554a7ab028a.jpg"
+    ],
+    "is_vip": 1,
+    "weight": "25g",
+    "seckill_limit": 0,
+    "pack": "袋装",
+    "unit": "5袋",
+    "vip_card": {
+        "is_opened": 1,
+        "back_cash_text": "购买该商品可省#_$2#_$元+返#_$0.49#_$元",
+        "icon_img": "https://j-image.missfresh.cn/img_20171020225432185.png"
+    },
+    "subtitle": "内含8种果粒 每口都是惊喜",
+    "name": "水果坚果混合燕麦片25g*5",
+    "market_price": 0,
+    "nationwide": 0,
+    "vip_price": 1190,
+    "delivery_mode": 1,
+    "storage_code": "",
+    "description": [
+        "内含燕麦脆、蔓越莓干、草莓干、香蕉片等8种果粒\r",
+        "口感酸甜酥香，又能增加饱腹感\r",
+        "开袋即食，搭配酸奶味道更赞"
+    ],
+    "promote_tag": "https://j-image.missfresh.cn/img_20170605114049455.png",
+    "product_created_at": "2017-09-11 10:12:53",
+    "is_exchange_product": 0,
+    "is_present": 0,
+    "exchange_times_per_period": 0,
+    "product_chrome": 0,
+    "can_use_voucher": 1,
+    "storage_method": "常温",
+    "quantity": 5,
+    "vip_exclusive": 2,
+    "cart_btn_name": "加入购物车",
+    "redpackage_rule": "【1、如本商品可使用红包，同时您有有效的红包，小鲜会自动帮您计算本商品使用红包后的折合价格】\n【2、具体计算规则：<br>1.商品价格大于红包使用门槛。<br>减后价格=商品原价-红包优惠金额。如不满包邮门槛，则折后价格在此基础上帮您加上运费。<br>2.商品价格小于等于红包使用门槛。<br>如红包使用门槛-红包优惠金额满足包邮门槛，则减后价格=（红包使用门槛-红包优惠金额）／红包使用门槛*商品原价；<br>如红包使用门槛-红包优惠金额不满包邮门槛，则减后价格=（红包使用门槛-红包优惠金额+运费）／红包使用门槛*商品原价。】\n【3、注意事项：】\n每笔订单只能使用一个红包，且需满足使用门槛才能使用。",
+    "share_info": {
+        "wx_share_type": 0,
+        "image_url": "https://image.missfresh.cn/7eb2c1018f7046a5840dd2978e1a2ad9.jpg",
+        "sina_url": "https://s.missfresh.cn/s/12817/32757143_dc99188",
+        "wx_url": "https://as-vip.missfresh.cn/s/pd?a=p-sgjghhmp25g*5&b=32757143_dc99&t=188&v=bd54&u=32757143",
+        "friend_share_type": 1,
+        "qqFriendShareType": 0,
+        "title": "【好友力荐】我发现了好东西！推荐你「水果坚果混合燕麦片25g*5」",
+        "content": "相信好友的眼光，新人优惠满59送50！",
+        "friend_url": "https://as-vip.missfresh.cn/s/pd?a=p-sgjghhmp25g*5&b=32757143_dc99&t=188&v=bd54&u=32757143",
+        "qqFriendUrl": "https://s.missfresh.cn/s/12817/32757143_dc99188"
+    },
+    "buy_permission": 0,
+    "storage_time": "300天",
+    "member_level": 1,
+    "vip_price_pro": {
+        "price_up": {
+            "show_type": 1,
+            "color": 16730257,
+            "showTag": 0,
+            "price": 1190,
+            "name": "商城价",
+            "is_ex_price": 0
+        },
+        "price_down": {
+            "show_type": 1,
+            "color": 16301056,
+            "showTag": 1,
+            "price": 990,
+            "name": "优享会员价",
+            "is_ex_price": 1
+        }
+    },
+    "instruction": [
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/29a7bebfda034d46969759b9b61d8e9b.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/51c361f0a9364983b1e829d7b142ef2c.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/4d50ceb26bca43839a0c87c812ebe8f0.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/3b32f6934709493984df60cfe17abc75.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/2d9a16c3719441fcb60da4eec8a1aa19.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/22d65e9768a84ac3af81e428094f4adb.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/8e5006a593044becb37c7b31e06a9f4d.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        }
+    ],
+    "cart_image": "https://image.missfresh.cn/7eb2c1018f7046a5840dd2978e1a2ad9.jpg",
+    "delivery_mode_name": "1小时达",
+    "product_share_info_v2": {
+        "product_share_need_price": 1,
+        "share_product_text": "已经有19645人分享了该商品",
+        "product_bright_spot": "亮点",
+        "qr_size": 77,
+        "product_rule_is_show": 1,
+        "show_share_img": "http://missfresh-asschool-develop-common.ufile.ucloud.com.cn/img_20170504191635971.png",
+        "preview_show": 0,
+        "share_bt_bg_img": "https://j-image.missfresh.cn/img_20171205114613373.jpg",
+        "product_share_backup_up": "https://j-image.missfresh.cn/img_20171029161039259.png",
+        "share_bg_title": "内含8种果粒 每口都是惊喜",
+        "benefit_status": 0,
+        "share_s_p_img": [
+            "https://j-image.missfresh.cn/img_20171029215450695.png"
+        ],
+        "prodcut_share_bg_login_text": "登陆方可享受奖励,立即登陆",
+        "share_product_img": "https://j-image.missfresh.cn/img_20171029215450695.png",
+        "preview_need_qrcode": 1,
+        "benefit_get_txt": "已获得",
+        "share_s_p_txt": "点击分享",
+        "prodcut_share_bg_img": "http://missfresh-asschool-develop-common.ufile.ucloud.com.cn/img_20170327161934693.jpg",
+        "prodcut_share_bg_text": "分享商品不仅有机会得15元红包\n好友下单购买，更有5%的返现等你拿",
+        "qr_y": 13,
+        "qr_x": 74,
+        "product_detail_is_show": 1,
+        "product_integarl_explain": "分享后点击链接，随机得红包，会员分享商品，非会员下单签收后，会员得5%返现",
+        "product_integarl_icon": "http://missfresh-asschool-develop-common.ufile.ucloud.com.cn/img_20170215184830712.png",
+        "product_integarl_text": "分享得红包，又得返现"
+    },
+    "enable_mrd": 1,
+    "exchange_limit_day": 0,
+    "promotion": [
+        "实付满39包邮"
+    ]
+}

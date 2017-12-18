@@ -1,0 +1,286 @@
+{
+    "country": "黑龙江哈尔滨市",
+    "group_info": {
+        "event_end_time": "",
+        "deliver_end_time": "",
+        "group_number_dec": "",
+        "owner_discount_price": 0,
+        "count_down": 0,
+        "group_initiator_benifit": "",
+        "event_start_time": "",
+        "new_user_only": 0,
+        "group_rule_img": "",
+        "group_h5_url": "",
+        "deliver_start_time": ""
+    },
+    "integral_price": 0,
+    "free_shipping": 0,
+    "redpackage_list": [
+        {
+            "redpackage_text": "使用满119元减20元红包后折合最低¥【28.96】",
+            "savePrice": 2896
+        }
+    ],
+    "delivery_style": "1小时达",
+    "product_need_level": 0,
+    "product_share_icon": "https://j-image.missfresh.cn/img_20171028203137142.png",
+    "price": 3990,
+    "exchange_times_per_day": 0,
+    "promote_tag_new": "",
+    "id": 11262,
+    "sku": "p-zjcfdhxdm-2.5kg",
+    "stock": 9,
+    "brand": "",
+    "integral_product_type": 0,
+    "sales_volume": "13146",
+    "image": "https://image.missfresh.cn/f787c7f96d5e4d87be8296d8adf72b49.jpg",
+    "images": [
+        "https://image.missfresh.cn/6f35cd7b1a864fb1b64a4976b37abaa2.jpg",
+        "https://image.missfresh.cn/b0dc44b581b242b89502d305ed38d3f0.jpg",
+        "https://image.missfresh.cn/6b4688d94ee044df92c01fce38a11344.jpg",
+        "https://image.missfresh.cn/912d00946fff4a45928470294cca0212.jpg",
+        "https://image.missfresh.cn/9d4265976d804770ac4cebb90da6eb04.jpg"
+    ],
+    "is_vip": 1,
+    "weight": "2.5kg",
+    "seckill_limit": 0,
+    "pack": "袋装",
+    "unit": "1袋",
+    "vip_card": {
+        "is_opened": 1,
+        "back_cash_text": "购买该商品可省#_$5#_$元+返#_$1.74#_$元",
+        "icon_img": "https://j-image.missfresh.cn/img_20171020225432185.png"
+    },
+    "subtitle": "来自五常 血统为纯正稻花香",
+    "name": "在家吃饭稻花香大米2.5kg",
+    "market_price": 0,
+    "nationwide": 0,
+    "vip_price": 3990,
+    "delivery_mode": 1,
+    "storage_code": "",
+    "description": [
+        "在家吃饭为每日优鲜自有品牌，买手亲自赴五常产地挑选大米，确保大米品质\r",
+        "不掺其他米种，让你尝到纯正稻花香的滋味\r",
+        "稻花香米香浓郁，蒸煮后带微微清香，口感有软糯有嚼劲\r",
+        "温馨提示：为了保持大米的原有风味，并防止霉、虫的侵袭，本品采用低氧保鲜包装 。在运输途中若出现松散属于正常现象，并不影响产品质量、口感。可放心食用。"
+    ],
+    "promote_tag": "",
+    "product_created_at": "2017-06-12 13:22:20",
+    "is_exchange_product": 0,
+    "is_present": 0,
+    "exchange_times_per_period": 0,
+    "product_chrome": 0,
+    "can_use_voucher": 1,
+    "storage_method": "放置阴凉通风干燥处 常温保存",
+    "quantity": 1,
+    "vip_exclusive": 2,
+    "cart_btn_name": "加入购物车",
+    "redpackage_rule": "【1、如本商品可使用红包，同时您有有效的红包，小鲜会自动帮您计算本商品使用红包后的折合价格】\n【2、具体计算规则：<br>1.商品价格大于红包使用门槛。<br>减后价格=商品原价-红包优惠金额。如不满包邮门槛，则折后价格在此基础上帮您加上运费。<br>2.商品价格小于等于红包使用门槛。<br>如红包使用门槛-红包优惠金额满足包邮门槛，则减后价格=（红包使用门槛-红包优惠金额）／红包使用门槛*商品原价；<br>如红包使用门槛-红包优惠金额不满包邮门槛，则减后价格=（红包使用门槛-红包优惠金额+运费）／红包使用门槛*商品原价。】\n【3、注意事项：】\n每笔订单只能使用一个红包，且需满足使用门槛才能使用。",
+    "share_info": {
+        "wx_share_type": 0,
+        "image_url": "https://image.missfresh.cn/5af82fa8a17045f992a74469a392c087.jpg",
+        "sina_url": "https://s.missfresh.cn/s/11262/32757143_dc99581",
+        "wx_url": "https://as-vip.missfresh.cn/s/pd?a=p-zjcfdhxdm-2.5kg&b=32757143_dc99&t=581&v=8081&u=32757143",
+        "friend_share_type": 1,
+        "qqFriendShareType": 0,
+        "title": "【好友力荐】我发现了好东西！推荐你「在家吃饭稻花香大米2.5kg」",
+        "content": "相信好友的眼光，新人优惠满59送50！",
+        "friend_url": "https://as-vip.missfresh.cn/s/pd?a=p-zjcfdhxdm-2.5kg&b=32757143_dc99&t=581&v=8081&u=32757143",
+        "qqFriendUrl": "https://s.missfresh.cn/s/11262/32757143_dc99581"
+    },
+    "buy_permission": 0,
+    "storage_time": "12个月",
+    "member_level": 1,
+    "vip_price_pro": {
+        "price_up": {
+            "show_type": 1,
+            "color": 16730257,
+            "showTag": 0,
+            "price": 3990,
+            "name": "商城价",
+            "is_ex_price": 0
+        },
+        "price_down": {
+            "show_type": 1,
+            "color": 16301056,
+            "showTag": 1,
+            "price": 3490,
+            "name": "优享会员价",
+            "is_ex_price": 1
+        }
+    },
+    "instruction": [
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/c1c22140c09145f0bb4d3015f9c39897.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/67af8a0d398d45179d3247f9355ef4e4.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/e0fb2cb719dc4f0f9ee1ce51afb189cc.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/a54ae007973745d883ada9cf3128c5df.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/09062422fcad425e8e6e7fca8680d663.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/4c133b6eff0b45d4af56bbf9f6db1db1.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/e48fdabb61234b99993c8bb35521bf3b.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/30713925f2ba44e78bc0a311338a3a4b.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/d5aae62b33f243c9b52bd296ef34be06.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/6a35a8fbf5884277a924b82183b63709.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/69443774b8394c0cb7dbb728eff4a5ca.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/185d3b5cecb14796971f2d85869b11b9.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/b9fd5433b1334e228ac30aa1a1d5b70a.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/b86339ee195c479b8ac44642ae944d20.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/1b6a8b3e6d674604a8c7077c9ff8e535.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/fa321de98ad74e069e0dd4ad965722e7.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/d5557808d079427d874044d6962e28ae.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        }
+    ],
+    "cart_image": "https://image.missfresh.cn/5af82fa8a17045f992a74469a392c087.jpg",
+    "delivery_mode_name": "1小时达",
+    "product_share_info_v2": {
+        "product_share_need_price": 1,
+        "share_product_text": "已经有38014人分享了该商品",
+        "product_bright_spot": "亮点",
+        "qr_size": 77,
+        "product_rule_is_show": 1,
+        "show_share_img": "http://missfresh-asschool-develop-common.ufile.ucloud.com.cn/img_20170504191635971.png",
+        "preview_show": 0,
+        "share_bt_bg_img": "https://j-image.missfresh.cn/img_20171205114613373.jpg",
+        "product_share_backup_up": "https://j-image.missfresh.cn/img_20171029161039259.png",
+        "share_bg_title": "来自五常 血统为纯正稻花香",
+        "benefit_status": 0,
+        "share_s_p_img": [
+            "https://j-image.missfresh.cn/img_20171029215450695.png"
+        ],
+        "prodcut_share_bg_login_text": "登陆方可享受奖励,立即登陆",
+        "share_product_img": "https://j-image.missfresh.cn/img_20171029215450695.png",
+        "preview_need_qrcode": 1,
+        "benefit_get_txt": "已获得",
+        "share_s_p_txt": "点击分享",
+        "prodcut_share_bg_img": "http://missfresh-asschool-develop-common.ufile.ucloud.com.cn/img_20170327161934693.jpg",
+        "prodcut_share_bg_text": "分享商品不仅有机会得15元红包\n好友下单购买，更有5%的返现等你拿",
+        "qr_y": 13,
+        "qr_x": 74,
+        "product_detail_is_show": 1,
+        "product_integarl_explain": "分享后点击链接，随机得红包，会员分享商品，非会员下单签收后，会员得5%返现",
+        "product_integarl_icon": "http://missfresh-asschool-develop-common.ufile.ucloud.com.cn/img_20170215184830712.png",
+        "product_integarl_text": "分享得红包，又得返现"
+    },
+    "enable_mrd": 1,
+    "exchange_limit_day": 0,
+    "promotion": [
+        "实付满39包邮"
+    ]
+}

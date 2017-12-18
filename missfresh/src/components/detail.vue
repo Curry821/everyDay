@@ -30,6 +30,7 @@
 								<div class="promotion-tag">
 									<img :src="products.promote_tag">
 								</div>
+								<!-- 商品信息 -->
 								<div class="textures">
 									<div class="box">
 										<div class="title">
@@ -68,84 +69,75 @@
 							<div class="product-membercard">
 								<div class="product-membercard-on">
 									<div class="membercard-none-img">
-										<img src="">
+										<img :src="products.vip_card.icon_img">
 									</div>
 									<div class="title">
-										购买该商品可省
-										<span style="color: #ff4891;">80.1</span>
-										元+返
-										<span style="color:#FF4891;">3.98</span>元
+										<span v-for="(txt, index) in Money" :class="txt.match(/^[0-9]\d*\.\d*|0\.\d*[1-9]\d*$/)?'title-red':'' ">{{ txt }}</span>
 									</div>
 								</div>
 							</div>
 							<!-- 分享返现 -->
-							<div class="integral">
-								<div class="integral-detail">
-									<img class="double-integral" src="">
-									<span class="integral-title">分享得红包，又得返现</span>
-									<img class="integral-click" src="">
-								</div>
-								<div class="un-share">
-									<div class="un-share-content">
-										 <div class="un-share-left un-share-left-auto">
-										 	 <img class="integral-img" src="">
-										 	 <div class="shadow">
-										 	 	<div>已获得</div>
-										 	 </div>
-										 </div>
-										 <div class="un-share-right">
-										 	<p>已经有11785人分享了该商品</p>
-										 </div>
+							<div class="share-new">
+								<div class="share-new-detail">
+									<div class="icon">
+										<img :src="products.product_share_info_v2.product_integarl_icon">
+									</div>
+									<span class="share-new-txt">
+										{{products.product_share_info_v2.product_integarl_text}}
+										<i class="xiangqing"></i>
+									</span>
+									<div class="share-new-btn">
+										去分享
 									</div>
 								</div>
-								<div class="share-btn">
-									<span>点击分享</span>
+								<p class="share-new-count">{{products.product_share_info_v2.share_product_text}}</p>
+							</div>
+							<!-- 安心检测 -->
+							<div class="security">
+								<p class="security-tit">{{ products.securityTitle}}</p>
+								<p class="security-txt">{{products.securityText}}</p>
+								<div class="scroll-view">
+									<div class="security-item" v-for="(item,index) in products.productFingerprints">
+										<img :src="item.securityTagUrl" @click="safeUrl(item.securityDetailUrl)">
+										<p>{{ item.securityTagName }}</p>
+									</div>
 								</div>
 							</div>
 							<!-- 亮点 -->
 							<div class="light-pots">
 								<div class="list-title">
-									<img class="bright-img" src="">亮点
-									<img class="bright-img" src="">
+									<h4>{{products.product_share_info_v2.product_bright_spot}}</h4>
 								</div>
 								<ul class="commodity-details">
-									<li>
-										<span class="disc"></span>
-										<span>精选乌克兰黑土地所产的葵花籽，品质佳适合只有</span>
-									</li>
-									<li>
-										<span class="disc"></span>
-										<span>精选乌克兰黑土地所产的葵花籽，品质佳适合只有</span>
-									</li>
-									<li>
-										<span class="disc"></span>
-										<span>精选乌克兰黑土地所产的葵花籽，品质佳适合只有</span>
+									<li v-for="(desc,index) in products.description">
+										<p>{{desc}}</p>
 									</li>
 								</ul>
 							</div>
 							<!-- 商品规格详情 -->
 							<div class="graphic-details">
-								<div class="top-title">
-									<div class="line">
-										商品详情
-									</div>
-								</div>
+								<h4></h4>
 								<div class="content-detail">
 									<div class="detail-item">
-										规格：<span class="detail-info">1桶</span>
+										规格：<span class="detail-info">{{products.unit}}</span>
 									</div>
 									<div class="detail-item">
-										重量：<span class="detail-info">4.008L</span>
+										重量：<span class="detail-info">{{products.weight}}</span>
 									</div>
 									<div class="detail-item">
-										包装：<span class="detail-info">桶装</span>
+										包装：<span class="detail-info">{{products.pack}}</span>
 									</div>
 									<div class="detail-item">
-										保质期：<span class="detail-info">540天</span>
+										保质期：
+										<span class="detail-info">{{products.storage_time}}</span>
 									</div>
 									<div class="detail-item">
-										贮存方法：<span class="detail-info">避光、阴凉、干燥处存放</span>
+										贮存方法：
+										<span class="detail-info">{{products.storage_method}}</span>
 									</div>
+								</div>
+								<div class="picture" v-for="(img, index) in products.instruction">
+									<img :src="img.image">
 								</div>
 							</div>
 						</div>
@@ -180,7 +172,8 @@
 					grabCursor:true,
 					autoHeight:true,
 					setWrapperSize:true
-				}
+				},
+				Money:[]
 			}
 		},
 		components:{
@@ -188,12 +181,18 @@
 			swiperSlide
 		},
 		methods:{
-			
+			safeUrl(url){
+				window.location = url;
+			},
+			back(){
+				window.history.back();
+			}
 		},
 		created(){
 			this.$http.get('./static/json/products/' + this.urlParams + '.json',{}).then((res)=>{
 				// 当前商品数据
-				this.products = res.data
+				this.products = res.data;
+				this.Money = this.products.vip_card.back_cash_text.split('#_$');
 				console.log(this.products)
 			})
 		},
@@ -207,9 +206,13 @@
 <style scoped>
 	*{
 		box-sizing: border-box;
+		font-family: "-apple-system","Helvetica Neue",Roboto,"Segoe UI",sans-serif;
 	}
 	img{
 		vertical-align: middle;
+	}
+	.title-red{
+	    color: #FF4891!important;
 	}
 	.pane,.view{
 		position: absolute;
@@ -300,7 +303,7 @@
 		position: absolute;
 		right: 0;
 		left: 0;
-		overflow: hidden;
+		overflow: auto;
 		margin-top: -1px;
 		padding-top: 1px;
 		margin-bottom: -1px;
@@ -429,51 +432,21 @@
 	.product-detail .textures .product-news .product-model +.product-model{
 		margin-left: 20px;
 	}
-	.product-detail .textures .product-news .product-mess img {
-	    width: 18px;
-	    vertical-align: sub;
-	}
-	
-	.product-detail .textures .product-news .sale-volume img {
-	    width: 18px;
-	}
-	.product-detail .textures .product-news .product-message {
-	    line-height: 44px;
-	    width: 33%;
-	    float: left;
-	    color: #969696;
-	    display: block;
-	    white-space: nowrap;
-	    overflow: hidden;
-	    -ms-text-overflow: ellipsis;
-	    text-overflow: ellipsis;
-	    text-align: right;
-	}
-	.product-detail .textures .product-news .product-message img {
-	    width: 18px;
-	    vertical-align: sub;
-	}
-	.product-detail .textures .product-news .product-model span.tag {
-	    color: #969696;
-	    font-size: 12px;
-	}
 	/*--------------------------优惠活动-----------------------------*/
 	.product-membercard {
-	    border-top: 10px solid #f5f5f5;
-	    border-left: 10px solid #f5f5f5;
-	    border-right: 10px solid #f5f5f5;
+		width: 100%;
+		padding: 0 15px;
+	    background: url(../assets/product-detail-member-bg.png) no-repeat;
+	    background-size: 100% 100%;
 	}
 	.product-membercard .product-membercard-on {
-	    height: 54px;
-	    text-align: left;
-	    padding: 0 15px;
-	    border-bottom: 1px solid #f5f5f5;
+	    height: 60px;
 	    display: table;
-	    width: 100%;
 	}
 	.product-membercard .product-membercard-on .membercard-none-img {
 	    vertical-align: middle;
 	    display: table-cell;
+	    padding-left: 15px;
 	}
 	.product-membercard .product-membercard-on .membercard-none-img img {
 	    width: auto;
@@ -488,175 +461,185 @@
 	    width: 90%;
 	    font-family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
 	}
-	/*--------------------------分享活动-----------------------------*/
-	.product-detail-page .integral {
-	    width: 100%;
-	    border-top: 10px solid #f5f5f5;
-	    border-left: 10px solid #f5f5f5;
-	    border-right: 10px solid #f5f5f5;
-	    padding-bottom: 5px;
+	/*-------------------分享活动---------------------*/
+	.product-detail-page .share-new{
+		width: 100%;
+		height: 100px;
+		margin-top: 10px;
 	}
-	.integral .integral-detail {
-	    padding: 0 10px;
-	    line-height: 44px;
+	.product-detail-page .share-new .share-new-detail{
+		width: 100%;
+		height: 60px;
+		padding: 0 15px;
+		background: url(https://static-as.missfresh.cn/frontend/img/product-detail-share-new.png) no-repeat;
+		background-size: 100% 100%;	
+		display: table;
 	}
-	.integral .integral-detail .double-integral {
-	    height: 15px;
-	    vertical-align: text-bottom;
-	    padding-right: 7px;
+	.share-new .share-new-detail .icon{
+		width: 47px;
+		display: table-cell;
+		vertical-align: middle;
+		padding-left: 10px;
 	}
-	.integral .integral-detail .integral-title {
-	    color: #262626;
-	    font-size: 14px;
+	 .share-new .share-new-detail .icon img{
+		width: 37px;
+		height: 18px;
+		vertical-align: middle;
 	}
-	.integral .integral-detail .integral-click {
+	.share-new .share-new-detail .share-new-txt {
+	    display: table-cell;
+	    vertical-align: middle;
+	    width: 68%;
+	    padding-top: 2px;
+	    padding-left: 8px;
+	    padding-right: 5px;
+	    color: #474245;
+	    line-height: 1.2;
+	    font-size: .28rem;
+	}
+	.share-new .share-new-detail .share-new-txt i {
+	    display: inline-block;
 	    width: 22px;
-	    margin-top: -3px;
-	}
-	.integral .un-share {
-	    padding: 0 10px;
-	}
-	.integral .un-share .un-share-content {
-	    background: #FFF4F8;
-	    display: flex;
-	    flex-direction: row;
-	    align-items: center;
-	}
-	.integral .un-share .un-share-content .un-share-left {
-	    width: 50%;
-	    text-align: center;
-	    margin: 10px;
-	    color: #FF4891;
-	    background: #fff;
+	    height: 22px;
+	    background: url(https://static-as.missfresh.cn/frontend/img/integral-help-ins.png) no-repeat;
+	    background-size: 100% 100%;
+	    vertical-align: middle;
 	    position: relative;
-	}
-	.integral .un-share .un-share-content .un-share-left-auto {
-	    width: auto;
-	    height: 46px;
-	}
-	.integral .un-share .un-share-content .un-share-left-auto img {
-	    height: 100%;
-	    width: auto;
-	}
-	.integral .un-share .un-share-content .un-share-left .shadow {
-	    width: 100%;
-	    height: 100%;
-	    position: absolute;
-	    top: 0;
-	    left: 0;
-	    z-index: 99;
-	    display: flex;
-	    align-items: center;
-	    justify-content: center;
-	    background-color: rgba(255,255,255,.8);
-	    display: none;
-	}
-	.integral .un-share .un-share-content .un-share-right {
-	    width: auto;
-	    margin: 10px;
-	    color: #FF4891;
-	    font-size: 12px;
+	    top: -1px;
 	}
 	/*-------------------------分享按钮-----------------------*/
-	.integral .share-btn {
-	    line-height: 23px;
-	    padding-top: 5px;
-	    text-align: center;
+	.share-new .share-new-detail .share-new-btn {
+	    width: 60px;
+	    height: 60px;
+	    line-height: 60px;
+	    font-size: 12px;
 	    color: #FF4891;
-	    font-size: 14px;
+	    float: right;
 	}
-	.integral .share-btn span:after {
+	.share-new .share-new-detail .share-new-btn:after {
 	    content: '';
 	    display: inline-block;
-	    width: 0;
-	    height: 0;
-	    border-top: 3px solid transparent;
-	    border-left: 3px solid red;
-	    border-bottom: 3px solid transparent;
+	    width: 8px;
+	    height: 13px;
+	    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAaBAMAAABMRsE0AAAAG1BMVEUAAAD/SJH/SJP/S5L/SZL/Tpf/SZH/UJv/SJFuA4dEAAAACHRSTlMA90Q9TQ3xEd33gQYAAAA0SURBVAjXY2AIZYAA9jQDKENCGCrk2AgVYqGqUCqEwQRjKDYqQAWEKBZghwmwpkEE4B4EADkXDSbDBl1uAAAAAElFTkSuQmCC) no-repeat;
+	    background-size: 100% 100%;
 	    position: relative;
-	    top: -2px;
-	    left: 5px;
+	    top: 2px;
+	    margin-left: 4px;
+	}
+	.share-new .share-new-count {
+	    font-size: 12px;
+	    color: #969696;
+	    padding-left: 25px;
+	}
+	/*-------安心检测-------*/
+	.security {
+	    width: 100%;
+	    height: 130px;
+	    padding: 0 15px;
+	}
+	.security .security-tit, .product-detail-page .security .security-txt {
+	    width: 100%;
+	    white-space: nowrap;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	}
+	.security .security-tit {
+	    font-size: 16px;
+	    color: #474245;
+	    font-weight: 700;
+	    line-height: 22px;
+	}
+	.security .security-txt {
+	    font-size: 12px;
+	    color: #969696;
+	    line-height: 16px;
+	    margin-top: 2px;
+	    margin-bottom: 15px;
+	}
+	.scroll-view{
+		display: flex;
+	}
+	.security .security-item {
+	    display: inline-block;
+	    min-width: 23%;
+	    text-align: center;
+	}
+	.security .security-item img {
+	    width: 30px;
+	    height: 30px;
+	    margin-bottom: 8px;
+	}
+	.security .security-item p {
+	    width: 100%;
+	    font-size: 12px;
+	    color: #474245;
 	}
 	/*-------------------亮点---------------------*/
 	.product-detail-page .light-pots {
 	    background: #fff;
-	    padding: 6px;
-	    border-top: 10px solid #f5f5f5;
-	    border-left: 10px solid #f5f5f5;
-	    border-right: 10px solid #f5f5f5;
+	    padding: 15px; 
 	}
-	.light-pots .list-title {
+	.light-pots h4 {
 	    font-size: 16px;
-	    color: #262626;
-	    clear: both;
-	    padding-left: 20px;
-	    text-align: center;
-	    line-height: 36px;
-	}
-	.list-title .bright-img {
-	    width: 16px;
-	    height: 16px;
+	    margin-bottom: 10px;
+	    font-weight: 500;
 	}
 	.light-pots .commodity-details {
 	    clear: both;
-	    padding: 0 14px;
-	    /*background: url(../img/product-bg2.png) no-repeat;*/
-	    background-size: 100% 100%;
+	    padding: 14px 20px 14px 15px;
 	}
-	.light-pots .commodity-details li {
+	.light-pots .commodity-details li{
 	    color: #262626;
 	    line-height: 40px;
 	    font-size: 14px;
-	    border-bottom: 1px solid #f5f5f5;
 	    position: relative;
 	}
-	.light-pots .commodity-details li:first-child {
-	    padding-top: 20px;
+	.light-pots .commodity-details li:before{
+		content: '';
+		position: absolute;
+		left: -10px;
+		top: 8px;
+		width: 3px;
+		height: 3px;
+		background: #474245;
+		border-radius: 50%;
 	}
-	.commodity-details li .disc {
-	    width: 5px;
-	    height: 5px;
-	    border-radius: 50%;
-	    background: #c6c6c6;
-	    display: inline-block;
-	    margin-right: 3px;
-	    vertical-align: middle;
-	    margin-top: -3px;
+	.commodity-details li p {
+	    line-height: 20px;
 	}
-
+	.commodity-details li+li {
+	    margin-top: 10px;
+	}
 	/*-----------------------商品详情---------------------*/
 	.product-detail-page .graphic-details {
-	    border: 10px solid #F5F5F5;
 	    width: 100%;
+	    padding: 20px 20px 10px;
 	}
-	.graphic-details .top-title {
-	    text-align: center;
-	    width: 100%;
+	.graphic-details h4 {
 	    font-size: 16px;
-	    color: #262626;
-	    clear: both;
-	    position: relative;
-	    margin: 0 auto;
-	    line-height: 44px;
+	    margin-bottom: 16px;
+	    font-weight: 500;
 	}
 	.graphic-details .content-detail {
-	    margin: 0 20px;
-	}
-	.graphic-details .top-title .line {
-	    text-align: center;
-	    position: relative;
-	    display: inline-block;
-	    padding: 0 20px;
+	    margin-bottom: 5px;
 	}
 	.graphic-details .content-detail .detail-item {
-	    color: #262626;
+	    color: #969696;
 	    line-height: 40px;
 	    font-size: 14px;
-	    border-top: 1px solid #f5f5f5;
 	}
 	.graphic-details .content-detail .detail-item .detail-info {
-	    color: #262626;
+	    color: #969696;
 	    padding-left: 5px;
+	}
+	/*------商品部分广告图-----*/
+	.graphic-details .picture{
+		position: relative;
+	}
+	.graphic-details .picture img{
+		width: 100%;
+		display: block;
 	}
 	/*--------------------商品详情的固定底部-------------------*/
 	.product-detail-page .bar-footer{

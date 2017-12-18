@@ -9,6 +9,9 @@ import VueLazyload from 'vue-lazyload'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import VueScroller from 'vue-scroller'
 
+//过滤器
+import filter from '../static/filter'
+
 Vue.use(VueLazyload)
 Vue.use(VueAwesomeSwiper)
 Vue.use(VueScroller)
