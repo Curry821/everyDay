@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            line-height: 1.6;
+        }
+        .shoplist{
+            padding: 0 0.9375rem;
+        }
+        .shop{
+            padding: 1.375rem 0;
+            position: relative;
+            background-color: #fff;
+            box-sizing: border-box;
+            border-bottom: 0.0625rem solid #f5f5f5;
+            display: flex;
+            }
+            .img{
+                width: 7.5rem;
+                height: 7.5rem;
+                margin-right:0.9375rem;
+                margin-left:0.3125rem;
+                position: relative;
+            }
+            .img img{
+                width:7.5rem;
+                height: 7.5rem;
+            }
+            .shoptitle{
+                position: relative;
+                flex: 1;
+            }
+            .shoptitle .listname{
+                margin-top: 0.625rem;
+            }
+            .shoptitle .listname p{
+                font-size: 1rem;
+                color: #474245;
+            }
+            .shoptitle .listname span{
+                font-size: 0.875rem;
+                color: #969696;
+            }
+            .shoptitle .quality {
+                line-height: 1.3125rem;
+                line-height: 1.3125rem;
+                height: 1.625rem;
+            }
+            .shoptitle .quality span{
+               display: inline-block;
+               border-radius: 0.125rem;
+               font-size: .75rem;
+               line-height: 1;
+               border: .0625rem solid #c6c6c6;
+               margin-right: .03125rem;
+               padding: 0.0625rem;
+               color: #c6c6c6;
+            }
+            /* 价格 */
+            .listprice{
+                margin-bottom: 0.625rem;                
+            }
+            .listprice .price{
+                font-size: 0.75rem;
+                line-height: 1;
+            }
+            .listprice .price p {
+                color: #ff4891;
+            }
+            .listprice .viprice{
+                line-height: 1;
+                color: #f8bc00;
+                font-size:  0.75rem;
+            }
+            .listprice .viprice span {
+                font-size: 1rem;
+                /* letter-spacing: -1px; */     
+            }
+            .cart{
+                position: absolute;
+                right: 0;
+                bottom:-.5rem;
+                display: none;
+            }
+            .cart img{
+                width: 3.0625rem;
+            }
+            .shopnum{
+                position: absolute;
+                width: 5.625rem;
+                right: 0;
+                bottom: .5rem;
+                text-align: center;
+                /* display: flex; */
+                text-align: center;
+            }
+            .shopnum span{
+                width: 1.375rem;
+                height: 1.375rem;
+                border: 1px solid #ff4891;
+                line-height:  1.375rem;
+                border-radius: 50%;
+                text-align: center;
+                display: inline-block;
+                font-size: 0.75rem;
+                font-weight: bold;
+            }
+            .shopnum .raduce{
+                color: #ff4891;
+            }
+            .shopnum .add{
+                background-color: #ff4891;
+                color: #fff;
+            }
+            .shop .num{
+                font-size: 0.75rem;
+    text-align: center;
+    min-width: 1.5625rem;
+    vertical-align: text-bottom;
+    display: inline-block;
+            }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="title">
+            <div class="titleType">
+                <div class="main">
+                    <h1>
+                        会员商品&s会员专享价
+                    </h1>
+                </div>
+                <div class="sub">
+                    <p>精选全球美食 成为会员抢先购买</p>
+                </div>
+            </div>
+        </div>
+        <!-- 商品列表 -->
+        <div>
+            <div class=shoplist>
+                <div class="shop">
+                    <div class="img">
+                        <img src="https://image.missfresh.cn/990bcb22502641cd8c6990c10d0b47a4.jpg?iopcmd=thumbnail&type=4&width=200" alt="">
+                    </div>
+                    <!-- 商品介绍 -->
+                    <div class="shoptitle">
+                        <!-- 商品name -->
+                        <div class="listname">
+                            <p>康师傅康师傅僵尸粉</p>
+                            <span>绝地反击卡萨积分</span>
+                        </div>
+                        <!-- 质量 -->
+                        <div class="quality">
+                            <span>
+                                    100%品控检测
+                            </span>
+                        </div>
+                        <!-- price -->
+                        <div class="listprice">
+                            <div class="price">
+                                <p>商城价 ￥<span>7/9</span></p>
+                            </div>
+                            <div class="viprice">
+                                <p>优享会员价 ￥<span>90</span></p>
+                            </div>
+                        </div>
+                        <!-- 购物车 -->
+                        <div class="cart">
+                            <img src="https://j-image.missfresh.cn/img_20170425134548759.png" alt="">
+                        </div>
+                        <!-- 数量 -->
+                        <div class="shopnum">
+                            <span class="raduce">-</span>
+                            <p class="num">1</p>
+                            <span class="add">+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
