@@ -1,0 +1,250 @@
+{
+    "country": "中国",
+    "group_info": {
+        "event_end_time": "",
+        "deliver_end_time": "",
+        "group_number_dec": "",
+        "owner_discount_price": 0,
+        "count_down": 0,
+        "group_initiator_benifit": "",
+        "event_start_time": "",
+        "new_user_only": 0,
+        "group_rule_img": "",
+        "group_h5_url": "",
+        "deliver_start_time": ""
+    },
+    "integral_price": 0,
+    "free_shipping": 0,
+    "redpackage_list": [
+        {
+            "redpackage_text": "使用满119元减20元红包后折合最低¥【16.51】",
+            "savePrice": 1651
+        }
+    ],
+    "delivery_style": "1小时达",
+    "product_need_level": 0,
+    "product_share_icon": "https://j-image.missfresh.cn/img_20171028203137142.png",
+    "price": 4410,
+    "exchange_times_per_day": 0,
+    "promote_tag_new": "",
+    "id": 13734,
+    "sku": "P-sdlwdzbmrjg125g",
+    "stock": 15,
+    "brand": "",
+    "integral_product_type": 0,
+    "sales_volume": "78479",
+    "image": "https://image.missfresh.cn/8562292ff5904e39952f027cca36ebff.jpg",
+    "images": [
+        "https://image.missfresh.cn/8408db9a6cc94d41b105cf8510161990.jpg",
+        "https://image.missfresh.cn/f206cc68441a47fdbf4cf361d7981946.jpg",
+        "https://image.missfresh.cn/e5a1904a47be45798b29df2c29c2affb.jpg",
+        "https://image.missfresh.cn/f79be7aab289404eaded2301c3ac1ce3.jpg",
+        "https://image.missfresh.cn/d9f2daca4d034e858bb65cea5dd51aa8.jpg",
+        "https://image.missfresh.cn/11982a2ee99c46c8afc810eb0aeedf57.jpg",
+        "https://image.missfresh.cn/daeb16c07ddd4947ad0234656a4d0836.jpg",
+        "https://image.missfresh.cn/ba6e1e2554064adcad7da34cccf46383.jpg"
+    ],
+    "is_vip": 1,
+    "weight": "125g",
+    "seckill_limit": 0,
+    "pack": "盒装",
+    "unit": "1盒",
+    "vip_card": {
+        "is_opened": 1,
+        "back_cash_text": "购买该商品可返#_$0.99#_$元",
+        "icon_img": "https://j-image.missfresh.cn/img_20171020225432185.png"
+    },
+    "subtitle": "集合7种营养的补给站 开张啦",
+    "name": "每日坚果25g*5(盒装)",
+    "market_price": 0,
+    "nationwide": 0,
+    "vip_price": 3580,
+    "delivery_mode": 1,
+    "storage_code": "",
+    "description": [
+        "从安心度、口感、工艺等维度用心甄选原材料\r",
+        "含丰富的蛋白质、油脂、矿物质、维生素。\r",
+        "坚果的香脆、小果干的酸甜一包可兼得"
+    ],
+    "promote_tag": "https://j-image.missfresh.cn/img_20170605114049455.png",
+    "product_created_at": "2017-10-30 11:01:07",
+    "is_exchange_product": 0,
+    "is_present": 0,
+    "exchange_times_per_period": 0,
+    "product_chrome": 0,
+    "can_use_voucher": 1,
+    "storage_method": "常温",
+    "quantity": 1,
+    "cart_btn_name": "加入购物车",
+    "redpackage_rule": "【1、如本商品可使用红包，同时您有有效的红包，小鲜会自动帮您计算本商品使用红包后的折合价格】\n【2、具体计算规则：<br>1.商品价格大于红包使用门槛。<br>减后价格=商品原价-红包优惠金额。如不满包邮门槛，则折后价格在此基础上帮您加上运费。<br>2.商品价格小于等于红包使用门槛。<br>如红包使用门槛-红包优惠金额满足包邮门槛，则减后价格=（红包使用门槛-红包优惠金额）／红包使用门槛*商品原价；<br>如红包使用门槛-红包优惠金额不满包邮门槛，则减后价格=（红包使用门槛-红包优惠金额+运费）／红包使用门槛*商品原价。】\n【3、注意事项：】\n每笔订单只能使用一个红包，且需满足使用门槛才能使用。",
+    "share_info": {
+        "wx_share_type": 0,
+        "image_url": "https://image.missfresh.cn/056b13732a6a40be87820e181d701750.jpg",
+        "sina_url": "https://s.missfresh.cn/s/13734/32757143_dc99783",
+        "wx_url": "https://as-vip.missfresh.cn/s/pd?a=P-sdlwdzbmrjg125g&b=32757143_dc99&t=783&v=a425&u=32757143",
+        "friend_share_type": 1,
+        "qqFriendShareType": 0,
+        "title": "【好友力荐】我发现了好东西！推荐你「每日坚果25g*5(盒装)」",
+        "content": "相信好友的眼光，新人优惠满59送50！",
+        "friend_url": "https://as-vip.missfresh.cn/s/pd?a=P-sdlwdzbmrjg125g&b=32757143_dc99&t=783&v=a425&u=32757143",
+        "qqFriendUrl": "https://s.missfresh.cn/s/13734/32757143_dc99783"
+    },
+    "buy_permission": 0,
+    "qa_info": [
+        {
+            "picUrl": "http://missfresh-asvip-develop-common.ufile.ucloud.cn/wms_1512960818682388537.png",
+            "width": 1001,
+            "height": 2939
+        }
+    ],
+    "storage_time": "180天",
+    "member_level": 1,
+    "vip_price_pro": {
+        "price_up": {
+            "show_type": 2,
+            "color": 9868950,
+            "price": 2450,
+            "name": ""
+        },
+        "price_down": {
+            "show_type": 1,
+            "color": 16730257,
+            "price": 1990,
+            "name": "商城价"
+        }
+    },
+    "instruction": [
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/bd087f5b570a4c27a25e2421529fb729.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/a45f648687f64847a715896cf6b8065d.gif",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/15f326dadeea4970a85e13f5a5c2a405.gif",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/50506d9db3164369946844e922f8ccf2.gif",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/2d73a11b7a0e44c2865a82eedd9786e9.gif",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/14ebdaa55e4243c7bb5a31f85e1da1f0.gif",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/e091e37aba6743ca81c1255a18afc6eb.gif",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/c148217f45be4e92a728965131ba7104.gif",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/61f46a59b6494b1a93cf3cd63235fc05.gif",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/ec7d086b753140328c92f6c92c77050c.gif",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/a6a9c13274bb4d7dba08c82a73db91a1.gif",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/2b051c34b71b41c8b85b178dafcacea3.gif",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        }
+    ],
+    "cart_image": "https://image.missfresh.cn/056b13732a6a40be87820e181d701750.jpg",
+    "delivery_mode_name": "1小时达",
+    "product_share_info_v2": {
+        "product_share_need_price": 1,
+        "share_product_text": "已经有10329人分享了该商品",
+        "product_bright_spot": "亮点",
+        "qr_size": 77,
+        "product_rule_is_show": 1,
+        "show_share_img": "http://missfresh-asschool-develop-common.ufile.ucloud.com.cn/img_20170504191635971.png",
+        "preview_show": 0,
+        "share_bt_bg_img": "https://j-image.missfresh.cn/img_20171205114613373.jpg",
+        "product_share_backup_up": "https://j-image.missfresh.cn/img_20171029161107230.png",
+        "share_bg_title": "集合7种营养的补给站 开张啦",
+        "benefit_status": 0,
+        "share_s_p_img": [
+            "https://j-image.missfresh.cn/img_20171029215450695.png"
+        ],
+        "prodcut_share_bg_login_text": "登陆方可享受奖励,立即登陆",
+        "share_product_img": "https://j-image.missfresh.cn/img_20171029215450695.png",
+        "preview_need_qrcode": 1,
+        "benefit_get_txt": "已获得",
+        "share_s_p_txt": "点击分享",
+        "prodcut_share_bg_img": "http://missfresh-asschool-develop-common.ufile.ucloud.com.cn/img_20170327161934693.jpg",
+        "prodcut_share_bg_text": "分享商品不仅有机会得15元红包\n好友下单购买，更有5%的返现等你拿",
+        "qr_y": 13,
+        "qr_x": 74,
+        "product_detail_is_show": 1,
+        "product_integarl_explain": "分享后点击链接，随机得红包，会员分享商品，非会员下单签收后，会员得5%返现",
+        "product_integarl_icon": "http://missfresh-asschool-develop-common.ufile.ucloud.com.cn/img_20170215184830712.png",
+        "product_integarl_text": "分享得红包，又得返现"
+    },
+    "enable_mrd": 1,
+    "exchange_limit_day": 0,
+    "promotion": [
+        "实付满39包邮"
+    ]
+}

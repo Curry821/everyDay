@@ -1,0 +1,211 @@
+{
+    "country": "中国",
+    "group_info": {
+        "event_end_time": "",
+        "deliver_end_time": "",
+        "group_number_dec": "",
+        "owner_discount_price": 0,
+        "count_down": 0,
+        "group_initiator_benifit": "",
+        "event_start_time": "",
+        "new_user_only": 0,
+        "group_rule_img": "",
+        "group_h5_url": "",
+        "deliver_start_time": ""
+    },
+    "integral_price": 0,
+    "free_shipping": 0,
+    "delivery_style": "1小时达",
+    "product_need_level": 0,
+    "product_share_icon": "https://j-image.missfresh.cn/img_20171028203137142.png",
+    "price": 1790,
+    "exchange_times_per_day": 0,
+    "promote_tag_new": "",
+    "id": 8821,
+    "sku": "p-nxxrb180g",
+    "stock": 42,
+    "brand": "",
+    "integral_product_type": 0,
+    "sales_volume": "55823",
+    "image": "https://image.missfresh.cn/product_images/6D0F389B782A35935A2BA8188A3CA873.JPG",
+    "images": [
+        "https://image.missfresh.cn/product_images/237331837A3B340B1E6CC155D9C97316.JPG",
+        "https://image.missfresh.cn/product_images/1DA4A720FBBD9E67EE6F2D5044F187E9.JPG",
+        "https://image.missfresh.cn/product_images/24D9DE74B9E11CFDB794B633D375BD64.JPG",
+        "https://image.missfresh.cn/product_images/81DDCD74FCEC7A49FEFEB8D9D97A051B.JPG"
+    ],
+    "is_vip": 1,
+    "weight": "180",
+    "seckill_limit": 0,
+    "pack": "袋装",
+    "unit": "1袋",
+    "vip_card": {
+        "is_opened": 1,
+        "back_cash_text": "购买该商品可返#_$0.34#_$元",
+        "icon_img": "https://j-image.missfresh.cn/img_20171020225432185.png"
+    },
+    "subtitle": "身材精致 满腹肉香汤汁",
+    "name": "南翔小笼包180g/袋",
+    "market_price": 0,
+    "nationwide": 0,
+    "vip_price": 690,
+    "delivery_mode": 1,
+    "storage_code": "",
+    "description": [
+        "蒸熟后外观小巧玲珑呈半透明状，洁白如玉\r",
+        "吃时谨记口诀“轻轻提，慢慢移，先开窗，后喝汤”\r",
+        "百年老字号工艺传承，纯正的老上海风情"
+    ],
+    "promote_tag": "https://j-image.missfresh.cn/img_20170605114049455.png",
+    "product_created_at": "2017-02-20 12:22:51",
+    "is_exchange_product": 0,
+    "is_present": 0,
+    "exchange_times_per_period": 0,
+    "product_chrome": 1,
+    "promotion_tag": "不可用红包",
+    "can_use_voucher": 0,
+    "storage_method": "冷冻储藏",
+    "quantity": 1,
+    "cart_btn_name": "加入购物车",
+    "share_info": {
+        "wx_share_type": 0,
+        "image_url": "https://image.missfresh.cn/product_images/A89270B9F43DCF82BFBB49F00B237506.JPG",
+        "sina_url": "https://s.missfresh.cn/s/8821/32757143_dc99258",
+        "wx_url": "https://as-vip.missfresh.cn/s/pd?a=p-nxxrb180g&b=32757143_dc99&t=258&v=a3c7&u=32757143",
+        "friend_share_type": 1,
+        "qqFriendShareType": 0,
+        "title": "【好友力荐】我发现了好东西！推荐你「南翔小笼包180g/袋」",
+        "content": "相信好友的眼光，新人优惠满59送50！",
+        "friend_url": "https://as-vip.missfresh.cn/s/pd?a=p-nxxrb180g&b=32757143_dc99&t=258&v=a3c7&u=32757143",
+        "qqFriendUrl": "https://s.missfresh.cn/s/8821/32757143_dc99258"
+    },
+    "presale_type": 0,
+    "buy_permission": 0,
+    "storage_time": "365",
+    "member_level": 1,
+    "material": "",
+    "vip_price_pro": {
+        "price_up": {
+            "show_type": 2,
+            "color": 9868950,
+            "price": 990,
+            "name": ""
+        },
+        "price_down": {
+            "show_type": 1,
+            "color": 16730257,
+            "price": 690,
+            "name": "商城价"
+        }
+    },
+    "instruction": [
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/286393f293354db1bcb33aa25ae4c115.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/793150e7ceea47ddaf88f0e264551937.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/fa4583fbd36d436e8a0c6a16cc88adac.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/ed433d233b12452eb9327dc163026989.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/3dfeeeed0fcc4ac7911a48d78880eb85.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/16628212225e47b88ce5d8d395ba2e2a.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/613f247d40a44511b1bea05597fc8d44.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/4ce8f36ed2a647569b063290236c3089.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/daf7f3f00b064798aa8d4c41ba36aedb.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        }
+    ],
+    "cart_image": "https://image.missfresh.cn/product_images/A89270B9F43DCF82BFBB49F00B237506.JPG",
+    "delivery_mode_name": "1小时达",
+    "product_share_info_v2": {
+        "product_share_need_price": 1,
+        "share_product_text": "已经有61981人分享了该商品",
+        "product_bright_spot": "亮点",
+        "qr_size": 77,
+        "product_rule_is_show": 1,
+        "show_share_img": "http://missfresh-asschool-develop-common.ufile.ucloud.com.cn/img_20170504191635971.png",
+        "preview_show": 0,
+        "share_bt_bg_img": "https://j-image.missfresh.cn/img_20171205114613373.jpg",
+        "product_share_backup_up": "https://j-image.missfresh.cn/img_20171029161107230.png",
+        "share_bg_title": "身材精致 满腹肉香汤汁",
+        "benefit_status": 0,
+        "share_s_p_img": [
+            "https://j-image.missfresh.cn/img_20171029215450695.png"
+        ],
+        "prodcut_share_bg_login_text": "登陆方可享受奖励,立即登陆",
+        "share_product_img": "https://j-image.missfresh.cn/img_20171029215450695.png",
+        "preview_need_qrcode": 1,
+        "benefit_get_txt": "已获得",
+        "share_s_p_txt": "点击分享",
+        "prodcut_share_bg_img": "http://missfresh-asschool-develop-common.ufile.ucloud.com.cn/img_20170327161934693.jpg",
+        "prodcut_share_bg_text": "分享商品不仅有机会得15元红包\n好友下单购买，更有5%的返现等你拿",
+        "qr_y": 13,
+        "qr_x": 74,
+        "product_detail_is_show": 1,
+        "product_integarl_explain": "分享后点击链接，随机得红包，会员分享商品，非会员下单签收后，会员得5%返现",
+        "product_integarl_icon": "http://missfresh-asschool-develop-common.ufile.ucloud.com.cn/img_20170215184830712.png",
+        "product_integarl_text": "分享得红包，又得返现"
+    },
+    "enable_mrd": 1,
+    "exchange_limit_day": 0,
+    "promotion": [
+        "实付满39包邮"
+    ]
+}

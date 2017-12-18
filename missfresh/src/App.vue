@@ -18,7 +18,7 @@
             <span class="tab-title">购物车</span>
             <span class="tab-cartNum" v-if="totalCount > 0">{{ totalCount }}</span>
         </router-link>
-        <router-link to="/mine" class="tab-item mine">
+        <router-link to="/login" class="tab-item mine">
             <i class="icon tab-img" style="background-image: url(src/assets/img_20171101111740549.png);"></i>
             <span class="tab-title">
                 我的

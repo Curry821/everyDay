@@ -1,0 +1,246 @@
+{
+    "country": "中国",
+    "group_info": {
+        "event_end_time": "",
+        "deliver_end_time": "",
+        "group_number_dec": "",
+        "owner_discount_price": 0,
+        "count_down": 0,
+        "group_initiator_benifit": "",
+        "event_start_time": "",
+        "new_user_only": 0,
+        "group_rule_img": "",
+        "group_h5_url": "",
+        "deliver_start_time": ""
+    },
+    "integral_price": 0,
+    "free_shipping": 0,
+    "redpackage_list": [
+        {
+            "redpackage_text": "使用满119元减20元红包后折合最低¥【33.11】",
+            "savePrice": 3311
+        }
+    ],
+    "delivery_style": "1小时达",
+    "product_need_level": 0,
+    "product_share_icon": "https://j-image.missfresh.cn/img_20171028203137142.png",
+    "price": 8910,
+    "exchange_times_per_day": 0,
+    "promote_tag_new": "",
+    "id": 9935,
+    "sku": "p-egdebx-400g",
+    "stock": 23,
+    "brand": "",
+    "integral_product_type": 0,
+    "sales_volume": "16665",
+    "image": "https://image.missfresh.cn/72b45605c8f6454e8580262ff920aea4.jpg",
+    "images": [
+        "https://image.missfresh.cn/61bf3c94ba6a4edc8a4efda1caf256cf.jpg",
+        "https://image.missfresh.cn/31c9e487b75c48e6beacef515de41c6d.jpg",
+        "https://image.missfresh.cn/b64fd3ec9ce64e3ea7fb54cf35e5f524.jpg",
+        "https://image.missfresh.cn/b5623a7b2c064ceb8bd2cea7ecb1da9e.jpg"
+    ],
+    "is_vip": 1,
+    "weight": "净含量400g",
+    "seckill_limit": 0,
+    "pack": "盒装",
+    "unit": "1盒",
+    "vip_card": {
+        "is_opened": 1,
+        "back_cash_text": "购买该商品可返#_$1.99#_$元",
+        "icon_img": "https://j-image.missfresh.cn/img_20171020225432185.png"
+    },
+    "subtitle": "横跨赤道而来的透亮肥虾",
+    "name": "厄瓜多尔白虾400g",
+    "market_price": 0,
+    "nationwide": 0,
+    "vip_price": 3990,
+    "delivery_mode": 1,
+    "storage_code": "MRYXBJN-SHENGWUYUAN,",
+    "description": [
+        "横跨赤道而来的亮透白虾\r",
+        "厄瓜多尔白虾是权威是一种挚爱\r",
+        "肉质结实不失弹性 天然海鲜味"
+    ],
+    "promote_tag": "https://j-image.missfresh.cn/img_20170605114049455.png",
+    "product_created_at": "2017-03-31 17:57:19",
+    "is_exchange_product": 0,
+    "is_present": 0,
+    "exchange_times_per_period": 0,
+    "product_chrome": 1,
+    "can_use_voucher": 1,
+    "storage_method": "冷冻-18℃",
+    "quantity": 1,
+    "cart_btn_name": "加入购物车",
+    "redpackage_rule": "【1、如本商品可使用红包，同时您有有效的红包，小鲜会自动帮您计算本商品使用红包后的折合价格】\n【2、具体计算规则：<br>1.商品价格大于红包使用门槛。<br>减后价格=商品原价-红包优惠金额。如不满包邮门槛，则折后价格在此基础上帮您加上运费。<br>2.商品价格小于等于红包使用门槛。<br>如红包使用门槛-红包优惠金额满足包邮门槛，则减后价格=（红包使用门槛-红包优惠金额）／红包使用门槛*商品原价；<br>如红包使用门槛-红包优惠金额不满包邮门槛，则减后价格=（红包使用门槛-红包优惠金额+运费）／红包使用门槛*商品原价。】\n【3、注意事项：】\n每笔订单只能使用一个红包，且需满足使用门槛才能使用。",
+    "share_info": {
+        "wx_share_type": 0,
+        "image_url": "https://image.missfresh.cn/ab1060fe98134acf857f4a5ed7084a0c.jpg",
+        "sina_url": "https://s.missfresh.cn/s/9935/32757143_dc99812",
+        "wx_url": "https://as-vip.missfresh.cn/s/pd?a=p-egdebx-400g&b=32757143_dc99&t=812&v=2dbc&u=32757143",
+        "friend_share_type": 1,
+        "qqFriendShareType": 0,
+        "title": "【好友力荐】我发现了好东西！推荐你「厄瓜多尔白虾400g」",
+        "content": "相信好友的眼光，新人优惠满59送50！",
+        "friend_url": "https://as-vip.missfresh.cn/s/pd?a=p-egdebx-400g&b=32757143_dc99&t=812&v=2dbc&u=32757143",
+        "qqFriendUrl": "https://s.missfresh.cn/s/9935/32757143_dc99812"
+    },
+    "buy_permission": 0,
+    "qa_info": [
+        {
+            "picUrl": "http://missfresh-asvip-develop-common.ufile.ucloud.cn/wms_1513253356510745965.png",
+            "width": 1001,
+            "height": 3049
+        }
+    ],
+    "storage_time": "540天",
+    "member_level": 1,
+    "vip_price_pro": {
+        "price_up": {
+            "show_type": 2,
+            "color": 9868950,
+            "price": 4490,
+            "name": ""
+        },
+        "price_down": {
+            "show_type": 1,
+            "color": 16730257,
+            "price": 3990,
+            "name": "商城价"
+        }
+    },
+    "instruction": [
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/1f87530ad8954f9caeaf8157028951eb.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/823b2bb9f9e247c5bbfcbfc116eb44c9.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/932f5ad252e14944bbb781a0eb7505e9.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/010ecdc553224248a1bee5052e838cf1.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/57718f59998b4b51abc476a7b57c51cc.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/59bd6b0becfc4c5aa5cef1c82f711d60.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/555bfb61d4634df5b02c71db2acdd24b.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/961d4f0c65df415b883ffad5e448b338.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/991d7ef4d53947b08f5b128361228fc6.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/2b7e06b379eb4c8eb4e33170e5511882.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/24d40896adee41a3a7e0ef4385067350.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/99f8a41736524f80b7559add03d2a17d.jpg",
+            "ordering": 0,
+            "description": "",
+            "video": "",
+            "title": ""
+        }
+    ],
+    "cart_image": "https://image.missfresh.cn/ab1060fe98134acf857f4a5ed7084a0c.jpg",
+    "delivery_mode_name": "1小时达",
+    "product_share_info_v2": {
+        "product_share_need_price": 1,
+        "share_product_text": "已经有53711人分享了该商品",
+        "product_bright_spot": "亮点",
+        "qr_size": 77,
+        "product_rule_is_show": 1,
+        "show_share_img": "http://missfresh-asschool-develop-common.ufile.ucloud.com.cn/img_20170504191635971.png",
+        "preview_show": 0,
+        "share_bt_bg_img": "https://j-image.missfresh.cn/img_20171205114613373.jpg",
+        "product_share_backup_up": "https://j-image.missfresh.cn/img_20171029161107230.png",
+        "share_bg_title": "横跨赤道而来的透亮肥虾",
+        "benefit_status": 0,
+        "share_s_p_img": [
+            "https://j-image.missfresh.cn/img_20171029215450695.png"
+        ],
+        "prodcut_share_bg_login_text": "登陆方可享受奖励,立即登陆",
+        "share_product_img": "https://j-image.missfresh.cn/img_20171029215450695.png",
+        "preview_need_qrcode": 1,
+        "benefit_get_txt": "已获得",
+        "share_s_p_txt": "点击分享",
+        "prodcut_share_bg_img": "http://missfresh-asschool-develop-common.ufile.ucloud.com.cn/img_20170327161934693.jpg",
+        "prodcut_share_bg_text": "分享商品不仅有机会得15元红包\n好友下单购买，更有5%的返现等你拿",
+        "qr_y": 13,
+        "qr_x": 74,
+        "product_detail_is_show": 1,
+        "product_integarl_explain": "分享后点击链接，随机得红包，会员分享商品，非会员下单签收后，会员得5%返现",
+        "product_integarl_icon": "http://missfresh-asschool-develop-common.ufile.ucloud.com.cn/img_20170215184830712.png",
+        "product_integarl_text": "分享得红包，又得返现"
+    },
+    "enable_mrd": 1,
+    "exchange_limit_day": 0,
+    "promotion": [
+        "实付满39包邮"
+    ]
+}

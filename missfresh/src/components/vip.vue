@@ -11,8 +11,10 @@
 			<div class="nav-vip scroll">
 				<ul class="scroll" >
 					<li v-for="(item, index) in vip_List">
-						<img src="" v-lazy="item.path">
-						<p>{{item.name}}</p>
+						<a :ref=" item.link ">
+							<img :src=" item.path">
+							<p>{{item.name}}</p>
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -91,7 +93,7 @@
 	export default{
 		data(){
 			return{
-				url:'./static/vip.json',
+				url:'./static/json/vip.json',
 				vip_List:[]
 			};
 		},

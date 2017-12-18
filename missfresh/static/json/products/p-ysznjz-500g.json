@@ -1,0 +1,252 @@
+{
+    "country": "中国",
+    "group_info": {
+        "event_end_time": "",
+        "deliver_end_time": "",
+        "group_number_dec": "",
+        "owner_discount_price": 0,
+        "count_down": 0,
+        "group_initiator_benifit": "",
+        "event_start_time": "",
+        "new_user_only": 0,
+        "group_rule_img": "",
+        "group_h5_url": "",
+        "deliver_start_time": ""
+    },
+    "integral_price": 0,
+    "free_shipping": 0,
+    "redpackage_list": [
+        {
+            "redpackage_text": "使用满119元减20元红包后折合最低¥【28.96】",
+            "savePrice": 2896
+        }
+    ],
+    "delivery_style": "1小时达",
+    "product_need_level": 0,
+    "product_share_icon": "https://j-image.missfresh.cn/img_20171028203137142.png",
+    "price": 4290,
+    "exchange_times_per_day": 0,
+    "promote_tag_new": "",
+    "id": 1631,
+    "sku": "p-ysznjz-500g",
+    "stock": 11,
+    "brand": "",
+    "integral_product_type": 0,
+    "sales_volume": "41930",
+    "image": "https://image.missfresh.cn/product_images/DA76E56AF4E50E9AD516ECA4491105E9.JPG",
+    "images": [
+        "https://image.missfresh.cn/product_images/3393D84B5242DD287C9F0E4092E6116C.JPG",
+        "https://image.missfresh.cn/product_images/B46CAE3FD61A17AEE51CC228DF248C54.JPG"
+    ],
+    "is_vip": 1,
+    "weight": "500g",
+    "seckill_limit": 0,
+    "pack": "袋装",
+    "unit": "500g",
+    "vip_card": {
+        "is_opened": 1,
+        "back_cash_text": "购买该商品可省#_$8#_$元+返#_$1.74#_$元",
+        "icon_img": "https://j-image.missfresh.cn/img_20171020225432185.png"
+    },
+    "subtitle": "还是那口老店里的清真味道",
+    "name": "月盛斋牛腱子500g",
+    "market_price": 8290,
+    "nationwide": 0,
+    "vip_price": 4290,
+    "delivery_mode": 1,
+    "storage_code": "",
+    "description": [
+        "清真品牌中的百年老店，保留两百多年老味道 \r",
+        "肉质鲜嫩富弹性，脂肪含量低 \r",
+        "肉中含筋呈花形，适于炖、焖、酱等烹调手法\r",
+        "清真食品"
+    ],
+    "promote_tag": "",
+    "product_created_at": "2016-01-05 20:54:51",
+    "is_exchange_product": 0,
+    "is_present": 0,
+    "exchange_times_per_period": 0,
+    "product_chrome": 1,
+    "can_use_voucher": 1,
+    "storage_method": "冷冻",
+    "quantity": 500,
+    "vip_exclusive": 2,
+    "cart_btn_name": "加入购物车",
+    "redpackage_rule": "【1、如本商品可使用红包，同时您有有效的红包，小鲜会自动帮您计算本商品使用红包后的折合价格】\n【2、具体计算规则：<br>1.商品价格大于红包使用门槛。<br>减后价格=商品原价-红包优惠金额。如不满包邮门槛，则折后价格在此基础上帮您加上运费。<br>2.商品价格小于等于红包使用门槛。<br>如红包使用门槛-红包优惠金额满足包邮门槛，则减后价格=（红包使用门槛-红包优惠金额）／红包使用门槛*商品原价；<br>如红包使用门槛-红包优惠金额不满包邮门槛，则减后价格=（红包使用门槛-红包优惠金额+运费）／红包使用门槛*商品原价。】\n【3、注意事项：】\n每笔订单只能使用一个红包，且需满足使用门槛才能使用。",
+    "share_info": {
+        "wx_share_type": 0,
+        "image_url": "https://image.missfresh.cn/product_images/0C59F3F3B4758DA4A42319A73A61D24B.JPG",
+        "sina_url": "https://s.missfresh.cn/s/1631/32757143_dc99944",
+        "wx_url": "https://as-vip.missfresh.cn/s/pd?a=p-ysznjz-500g&b=32757143_dc99&t=944&v=4629&u=32757143",
+        "friend_share_type": 1,
+        "qqFriendShareType": 0,
+        "title": "【好友力荐】我发现了好东西！推荐你「月盛斋牛腱子500g」",
+        "content": "相信好友的眼光，新人优惠满59送50！",
+        "friend_url": "https://as-vip.missfresh.cn/s/pd?a=p-ysznjz-500g&b=32757143_dc99&t=944&v=4629&u=32757143",
+        "qqFriendUrl": "https://s.missfresh.cn/s/1631/32757143_dc99944"
+    },
+    "presale_type": 0,
+    "buy_permission": 0,
+    "qa_info": [
+        {
+            "picUrl": "http://missfresh-asvip-develop-common.ufile.ucloud.cn/wms_1512885338065262417.png",
+            "width": 1001,
+            "height": 3359
+        }
+    ],
+    "storage_time": "12个月",
+    "member_level": 1,
+    "material": "",
+    "vip_price_pro": {
+        "price_up": {
+            "show_type": 1,
+            "color": 16730257,
+            "showTag": 0,
+            "price": 4290,
+            "name": "商城价",
+            "is_ex_price": 0
+        },
+        "price_down": {
+            "show_type": 1,
+            "color": 16301056,
+            "showTag": 1,
+            "price": 3490,
+            "name": "优享会员价",
+            "is_ex_price": 1
+        }
+    },
+    "instruction": [
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/93cd150f31434177832086b124321817.jpg",
+            "ordering": 12,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/5d39f2f776b14e19ba436e7fdab3edd8.jpg",
+            "ordering": 11,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/d091da6767ff4e308ef992615822e794.jpg",
+            "ordering": 10,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/f34f54f88e15446c82e8a80cdf79c4b8.jpg",
+            "ordering": 9,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/17e4aaada2034b7e88184761f6c693bb.jpg",
+            "ordering": 8,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/550b22d86b544d6bbf6385055f9a0637.jpg",
+            "ordering": 7,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/54200169801749d9a9000c1bba02f2ce.jpg",
+            "ordering": 6,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/e4733fd8b95544e5807f53f5153d3718.jpg",
+            "ordering": 5,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/544d257ca04a40719421557298248fba.jpg",
+            "ordering": 4,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/80b9eb4e12c342afb6bd80bf99792020.jpg",
+            "ordering": 3,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/4e858cb1fcea42cd972292b46be469e1.jpg",
+            "ordering": 2,
+            "description": "",
+            "video": "",
+            "title": ""
+        },
+        {
+            "blur_image": "",
+            "image": "https://image.missfresh.cn/b4350345f0434ab5a25f85e31fb8f1c1.jpg",
+            "ordering": 0,
+            "description": "一.材料\r\n牛腿肉（牛腱）500g,料酒1勺,八角2个,香叶2片,桂皮1片,干辣椒2个,盐1/2勺,白糖1/2勺,生姜1小块,花椒1/2勺,蘸料:五香粉1/3勺,花椒1/2勺,盐1勺\r\n二.步骤\r\n1、锅中水烧开后，放入牛肉，焯水\r\n2、捞起后，冲冷水\r\n3、锅中放入适量水，放入八角、桂皮、香叶、干辣椒、生姜烧开\r\n4、放入牛肉，倒入1勺料酒，1/2勺盐，1/2白糖，烧开后转小火煮40分钟\r\n5、煮好牛肉后，在汤汁中浸半小时后，沥干水分，彻底冷却\r\n6、冷却后切薄片\r\n7、准备盐，花椒\r\n8、锅中炒香\r\n9、研磨成粉末状\r\n10、调入1/3勺五香粉，做成牛肉蘸料\r\n【菜谱来自豆果美食】",
+            "video": "",
+            "title": "盐蘸牛肉"
+        }
+    ],
+    "cart_image": "https://image.missfresh.cn/product_images/0C59F3F3B4758DA4A42319A73A61D24B.JPG",
+    "delivery_mode_name": "1小时达",
+    "product_share_info_v2": {
+        "product_share_need_price": 1,
+        "share_product_text": "已经有70940人分享了该商品",
+        "product_bright_spot": "亮点",
+        "qr_size": 77,
+        "product_rule_is_show": 1,
+        "show_share_img": "http://missfresh-asschool-develop-common.ufile.ucloud.com.cn/img_20170504191635971.png",
+        "preview_show": 0,
+        "share_bt_bg_img": "https://j-image.missfresh.cn/img_20171205114613373.jpg",
+        "product_share_backup_up": "https://j-image.missfresh.cn/img_20171029161039259.png",
+        "share_bg_title": "还是那口老店里的清真味道",
+        "benefit_status": 0,
+        "share_s_p_img": [
+            "https://j-image.missfresh.cn/img_20171029215450695.png"
+        ],
+        "prodcut_share_bg_login_text": "登陆方可享受奖励,立即登陆",
+        "share_product_img": "https://j-image.missfresh.cn/img_20171029215450695.png",
+        "preview_need_qrcode": 1,
+        "benefit_get_txt": "已获得",
+        "share_s_p_txt": "点击分享",
+        "prodcut_share_bg_img": "http://missfresh-asschool-develop-common.ufile.ucloud.com.cn/img_20170327161934693.jpg",
+        "prodcut_share_bg_text": "分享商品不仅有机会得15元红包\n好友下单购买，更有5%的返现等你拿",
+        "qr_y": 13,
+        "qr_x": 74,
+        "product_detail_is_show": 1,
+        "product_integarl_explain": "分享后点击链接，随机得红包，会员分享商品，非会员下单签收后，会员得5%返现",
+        "product_integarl_icon": "http://missfresh-asschool-develop-common.ufile.ucloud.com.cn/img_20170215184830712.png",
+        "product_integarl_text": "分享得红包，又得返现"
+    },
+    "enable_mrd": 1,
+    "exchange_limit_day": 0,
+    "promotion": [
+        "实付满39包邮"
+    ]
+}

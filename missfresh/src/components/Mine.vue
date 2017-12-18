@@ -1,8 +1,6 @@
 <template>
 	<div id="mine">
-		
-		<div class="mine">
-		<router-view></router-view>
+		<div class="mine" v-show="show">
 			<!-- 头部 -->
 			<div class="home-mine">
 				<div class="bottom-home-mine">
@@ -79,9 +77,11 @@
 			<div class="main-nav">
 				<ul>
 					<li v-for="(item, index) in mineList">
-						<img :src=" item.path">
-						<p>{{item.name}}</p>
-					</li>
+							<a :href="item.link">
+								<img :src="item.path">
+								<p>{{item.name}}</p>
+							</a>	
+					</li> 
 				</ul>
 			</div>
 			<!-- 导航结束 -->
@@ -90,8 +90,9 @@
 				<img src="../assets/img_20171107230641093.png">
 			</div>
 			<!-- banner end -->
+
 			<!-- 我的订单 -->
-			<div class="home-list">
+			<div class="home-list" @click="shows">
 				<ul>
 					<router-link to="mylist">
 						<li class="mine-buy">
@@ -99,7 +100,7 @@
 							<span>></span>
 						</li>
 					</router-link>
-					<router-link to="noArdss">	
+					<router-link to="/noArdss">
 						<li class="mine-adrass">
 							我的地址
 							<span>
@@ -107,16 +108,23 @@
 							</span>
 						</li>
 					</router-link>
-					<li class="mine-load">下载每日优先APP<span>></span></li>
+					<a href="http://a.app.qq.com/o/simple.jsp?pkgname=cn.missfresh.application&ckey=CK1341501716812"><li class="mine-load">下载每日优先APP<span>></span></li></a>
 					<router-link to="/kefu">
 						<li class="mine-service">
 							联系客服
-							<span>
+								<span>
 								>
 								</span>
 						</li>
 					</router-link>
-					<li class="mine-tickling">意见反馈<span>></span></li>
+					<router-link to="/yijian">
+						<li class="mine-tickling">
+							意见反馈
+							<span>
+								>
+							</span>
+						</li>
+					</router-link>
 					<li class="mine-message">消息<span>></span></li>
 					<li class="mine-our">关于我们<span>></span></li>
 					<li class="mine-set-up">设置<span>></span></li>
@@ -124,18 +132,28 @@
 			</div>
 			<!-- mine结束标签 -->
 		</div>
+
+	<!-- 输入信息 -->
 	</div>
 </template>
 <script>
-
-
+	// import longin from 'longin'
 	export default {
 		data(){
 			return {
-			url:"./static/vip.json",
-			mineList:[]
+			url:"./static/json/vip.json",//请求地址
+			mineList:[],
+			show:true
+			
 			};
 		},
+	
+		methods:{
+			shows:function(){
+				this.show = false;
+			}
+		},	
+		
 		// 使用axios请求数据
 		created(){
 			this.$http.get(this.url).then((res)=>{
@@ -145,18 +163,22 @@
 		},
 		name : "Mine",
 		mounted(){
+			
 			//添加修改state数据
 			// this.$store.dispatch("addDate",new Date());
 			//动态获取适配窗口宽度
+
 			(function (doc, win) {
 			  var docEl = win.document.documentElement;
 			  var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+
 			  /**
 			    * ================================================
 			    *   设置根元素font-size
 			    * 当设备宽度为375(iPhone6)时，根元素font-size=50px; 
 			    × ================================================
 			    */
+
 			  var refreshRem = function () {
 			    var clientWidth = win.innerWidth
 			                      || doc.documentElement.clientWidth
@@ -186,6 +208,7 @@
 		height: 100%;
 		line-height:20px ;
 		font-size: 14px;
+		display: block;
 	}
 	.mine .home-mine{
 		width: 100%; 
@@ -390,4 +413,6 @@
 		font-family: "宋体";
 		color: #9b9b9b;
 	}
+
+
 </style>
