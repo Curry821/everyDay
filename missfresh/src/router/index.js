@@ -18,7 +18,8 @@ import mylist from '@/components/mylist'
 import kefu from "@/components/kefu"
 //商品详情
 import detail from "@/components/detail"
-
+//登录页面
+import login from "@/components/login"
 Vue.use(Router)
 
 export default new Router({
