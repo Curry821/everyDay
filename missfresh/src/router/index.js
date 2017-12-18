@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 // 主页面
 import Home from '@/components/Home'
-import map from '@/components/Map'
+
 import Cart from '@/components/Cart'
 import Mine from '@/components/Mine'
 import freshNews from '@/components/freshNews'
@@ -56,11 +56,6 @@ export default new Router({
       path: '/cart',
       name: 'Cart',
       component : Cart
-    },
-    {
-      path: '/mapa',
-      name: 'map',
-      component :map
     },
     //个人中心
     {
