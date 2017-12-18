@@ -1,5 +1,6 @@
 <template>
 	<div id="mine">
+<<<<<<< HEAD
 		<router-view></router-view>
 		<div class="mine" v-show="show">
 			<!-- 头部 -->
@@ -834,6 +835,8 @@
 
 </style><template>
 	<div id="mine">
+=======
+>>>>>>> 44ad139168c60666d7a757fcc2195472ed4dee9b
 		<router-view></router-view>
 		<div class="mine" v-show="show">
 			<!-- 头部 -->

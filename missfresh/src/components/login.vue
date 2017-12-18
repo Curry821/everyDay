@@ -1,6 +1,19 @@
 <template>
     <div>
+<<<<<<< HEAD
          <div>
+=======
+        <login></login>
+    </div>
+</template>
+<script>
+    import Vue from "vue"
+    import router from 'vue-router'
+    Vue.component('login',{
+        template:
+        `
+            <div>
+>>>>>>> 44ad139168c60666d7a757fcc2195472ed4dee9b
                  <div class="checkMessage">
                  <div class="mineLogin">
 			        <div class="renew-header-bar">
@@ -40,6 +53,7 @@
                 </div>
             </div>
 		        <p>为方便您及时查询订单信息，需要验证您的手机号来登录</p>
+<<<<<<< HEAD
             </div>
     </div>
 </template>
@@ -47,6 +61,9 @@
     import Vue from "vue"
     import router from 'vue-router'
    export default{
+=======
+            </div>`,
+>>>>>>> 44ad139168c60666d7a757fcc2195472ed4dee9b
         data(){
             return {
                 time:'获取验证码',//时间按钮
@@ -133,7 +150,11 @@
                     }
                 }		
             }
+<<<<<<< HEAD
         }
+=======
+        })
+>>>>>>> 44ad139168c60666d7a757fcc2195472ed4dee9b
          Vue.directive('focus',{
         //绑定元素插入dom中
         //当前使用指令的文本框自懂实现获取焦点
