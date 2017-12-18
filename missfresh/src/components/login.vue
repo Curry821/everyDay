@@ -1,19 +1,6 @@
 <template>
     <div>
-<<<<<<< HEAD
          <div>
-=======
-        <login></login>
-    </div>
-</template>
-<script>
-    import Vue from "vue"
-    import router from 'vue-router'
-    Vue.component('login',{
-        template:
-        `
-            <div>
->>>>>>> 44ad139168c60666d7a757fcc2195472ed4dee9b
                  <div class="checkMessage">
                  <div class="mineLogin">
 			        <div class="renew-header-bar">
@@ -53,7 +40,6 @@
                 </div>
             </div>
 		        <p>为方便您及时查询订单信息，需要验证您的手机号来登录</p>
-<<<<<<< HEAD
             </div>
     </div>
 </template>
@@ -61,9 +47,6 @@
     import Vue from "vue"
     import router from 'vue-router'
    export default{
-=======
-            </div>`,
->>>>>>> 44ad139168c60666d7a757fcc2195472ed4dee9b
         data(){
             return {
                 time:'获取验证码',//时间按钮
@@ -150,11 +133,7 @@
                     }
                 }		
             }
-<<<<<<< HEAD
         }
-=======
-        })
->>>>>>> 44ad139168c60666d7a757fcc2195472ed4dee9b
          Vue.directive('focus',{
         //绑定元素插入dom中
         //当前使用指令的文本框自懂实现获取焦点
@@ -167,11 +146,11 @@
     // export default login;
 </script>
 
-<style>
+<style scoped>
     	/*登录*/
-    .mine{
-            display: none;
-    }
+        ..checkMessage{
+            background-color: #fff;
+        }
 	.renew-header-bar{
 	padding: 5px;
 	height: 44px;
@@ -217,11 +196,13 @@
     border-bottom: 1px solid #e6e6e6;
     padding: 5px 0;
     background: 0 0;
+      background-color: #fff;
 }
 .messageNums .phoneNum p{
 	color: #ff4891 ;
 	text-align: left;
 	padding:0;
+        
 }
  .phonebtn button{
 	 font-size: 14px;
@@ -287,6 +268,7 @@ p{
 	padding: 5px 30px 0 32px;
     color: #969696;
     font-size: 12px;
+    text-align: center;
 }
 </style>
 

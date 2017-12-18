@@ -1,5 +1,6 @@
 <template>
 <div id="freshNews">
+	<load v-show="isload"></load>	
 	<scroller class="fresh-news" on-refresh="refresh" :on-infinite="infinite" ref="myscroller">
 		<!-- 头部小白条 -->
 		<div class="fresh-news-header">
@@ -49,14 +50,19 @@
 </div>
 </template>
 <script>
+	import load from "@/components/load"
 	export default{
 		data() {
 			return{
 				/*返回请求的数据*/
-				url:'./static/freshNew.json',
+				url:'./static/json/freshNew.json',
 				proList:[],
-				noData: ''
+				noData: '',
+				isload:true
 			};
+		},
+		components:{
+			load
 		},
 		// ready() {
   //     for (let i = 1; i <= 20; i++) {
@@ -112,8 +118,9 @@
 		created(){
 			// 使用axio 插件请求数据
 			this.$http.get(this.url).then((res)=>{
-				console.log(res.data.data.discover_con_list);
-				this.proList = res.data.data.discover_con_list;
+			console.log(res.data.data.discover_con_list);
+			this.proList = res.data.data.discover_con_list;
+			this.isload =false
 			});
 		},
 		mounted(){
