@@ -173,7 +173,9 @@
 					autoHeight:true,
 					setWrapperSize:true
 				},
-				Money:[]
+				Money:[],
+				//安心检测是否渲染
+				safePrints:[]
 			}
 		},
 		components:{
@@ -193,6 +195,7 @@
 				// 当前商品数据
 				this.products = res.data;
 				this.Money = this.products.vip_card.back_cash_text.split('#_$');
+				this.safePrints = this.products.productFingerprints
 				console.log(this.products)
 			})
 		},
