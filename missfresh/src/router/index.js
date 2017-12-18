@@ -18,14 +18,10 @@ import mylist from '@/components/mylist'
 import kefu from "@/components/kefu"
 //商品详情
 import detail from "@/components/detail"
-<<<<<<< HEAD
 //登录页面
 import login from "@/components/login"
-=======
-// login
-import login from "@/components/login"
-
->>>>>>> 44ad139168c60666d7a757fcc2195472ed4dee9b
+// 404 页面
+import nofind from "@/components/nofind"
 Vue.use(Router)
 
 export default new Router({
@@ -67,33 +63,35 @@ export default new Router({
     {
       path: '/mine',
       name: 'Mine',
-      component : Mine,
-      children:[
-        {
-            path:"/noArdss",
-            component:noArdss
-        },
-        {
-            path:"/haveAdress",
-            component:haveAdress
-        },
-        {
-            path:"/addressList",
-            component:addressList
-        },
-        {
-            path:"/kefu",
-            component:kefu
-        },
-        {
-            path:"/mylist",
-            component:mylist
-        },
-        {
-            path:'/login',
-            component:"login"
-        }
-        ]
+      component : Mine
+    },
+      {
+          path:"/noArdss",
+          component:noArdss
+      },
+      {
+          path:"/haveAdress",
+          component:haveAdress
+      },
+      {
+          path:"/addressList",
+          component:addressList
+      },
+      {
+          path:"/kefu",
+          component:kefu
+      },
+      {
+          path:"/mylist",
+          component:mylist
+      },
+      {
+          path:'/login',
+          component:login
+    },
+    {
+      path:'*',
+      component:nofind
     }
   ]
 })
