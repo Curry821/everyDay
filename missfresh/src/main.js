@@ -9,8 +9,11 @@ import VueLazyload from 'vue-lazyload'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import VueScroller from 'vue-scroller'
 
+<<<<<<< HEAD
+=======
 //过滤器
 import filter from '../static/filter'
+>>>>>>> 1367a4f1cc862aa49ddb889bfcabc2f426f6a6ce
 
 Vue.use(VueLazyload)
 Vue.use(VueAwesomeSwiper)
@@ -25,5 +28,5 @@ new Vue({
   router,
   store,
   template: '<App/>',
-  components: { App }
+  components: { App ,Map}
 })

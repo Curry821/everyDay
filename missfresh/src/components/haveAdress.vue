@@ -18,8 +18,8 @@
 					<ul>
 						<li><span>收货人</span> <input type="text" placeholder="收货人姓名" :value="name" @input="updataName"></li>
 						<li><span>手机号码</span><input type="text" placeholder="配送员联系您的电话"></li>
-						<li><span>收货地址</span><input type="text" placeholder="收货人姓名"></li>
-						<li><span>楼排门号</span><input type="text" placeholder="收货人姓名"></li>
+						<li><span>收货地址</span><input type="text" placeholder="请输入地图中的地址信息"></li>
+						<li><span>楼排门号</span><input type="text" placeholder="请输入楼排门号"></li>
 						<li>
 						<span>地址类型 </span>
 							<div>

@@ -24,6 +24,10 @@
                 我的
                 <span class="tab-red-dot"></span>
             </span>
+            
+        </router-link>
+         <router-link to="/map">
+            地图
         </router-link>
     </div>
     <router-view></router-view>
@@ -32,6 +36,7 @@
 
 <script>
 export default {
+
     name: 'app',
     data(){
         return{

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 // 主页面
 import Home from '@/components/Home'
+
 import Cart from '@/components/Cart'
 import Mine from '@/components/Mine'
 import freshNews from '@/components/freshNews'
