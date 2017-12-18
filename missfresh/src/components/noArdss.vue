@@ -20,7 +20,7 @@
 		</div>
 		<!-- 没有收获地址得时候 -->
 		<div class="not-address">
-			<div>您还没有收货地址请添加</div>
+			<div id="map">您还没有收货地址请添加</div>
 		</div>
 	<!-- 	<router-link to="/haveAdress"> -->
 		<div class="btn">
@@ -69,6 +69,18 @@
 
 			})(document, window);
 
+		},
+		methods:{
+			map() {
+			var map = new AMap.Map("map", {
+			//缩放级别
+			zoom: 11,
+			//地图的中心点
+			center: [116.40, 39.91],
+			//语言的设置
+			lang: "zh_en"
+	});
+			}
 		}
 	}
 </script>

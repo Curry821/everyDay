@@ -9,6 +9,9 @@ import VueLazyload from 'vue-lazyload'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import VueScroller from 'vue-scroller'
 
+import Map from './components/Map'
+
+Vue.use(Map)
 Vue.use(VueLazyload)
 Vue.use(VueAwesomeSwiper)
 Vue.use(VueScroller)
@@ -22,5 +25,5 @@ new Vue({
   router,
   store,
   template: '<App/>',
-  components: { App }
+  components: { App ,Map}
 })
