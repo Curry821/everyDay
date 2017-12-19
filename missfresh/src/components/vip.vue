@@ -87,21 +87,44 @@
 				</div>
 			</div>
 		</div>
-	</div>
+</div>
 </template>
 <script>
 	export default{
 		data(){
 			return{
 				url:'./static/json/vip.json',
-				vip_List:[]
+				vip_List:[],
+				prolist:[],
+				num: 0,
 			};
+		},
+		methods:{
+			//点击添加
+			add(index){
+				console.log(index)
+				this.num++
+			},
+			reduce(index){
+				console.log(index)
+				this.num--
+			},
+			changenum(index){
+				this.num  = 1;
+			}
+
 		},
 		created(){
 			// 是用axios传值
-			this.$http.get(this.url).then((res)=>{
+				this.$http.get(this.url).then((res)=>{
 				// console.log(res.data.data.vip_list);
 				this.vip_List = res.data.data.vip_list;
+				// 商品详情页
+				this.$http.get("http://h5.yztctech.net/api/axf/apihomehot.php").then( (res) =>{
+					this.prolist  = res.data.data
+					console.log(res.data.data)
+				})
+
 			});
 		},
 		mounted(){
@@ -137,14 +160,10 @@
 	}
 	// zi
 </script>
-<style>	
+<style scoped>
 *{
 	margin:0;
 	padding:0;
-}
-*{
-	padding:0;
-	margin: 0;
 }
 html{
 	width: 100%;
@@ -210,8 +229,6 @@ body{
 	bottom:0;
 	display: flex;
 	font-size: .75rem;
-
-
 }
 .vip .nav-vip ul li{
 	min-width: 5.1875rem;
@@ -388,23 +405,141 @@ body{
 	color: #f8bc00;
 	font-size: 1.25rem;
 	font-weight: bolder;
-
-
 }
 .vip .goods-text .down-price .price{
 	margin-left: -0.3125rem;
 }
 .vip .goods-text img{
 	  display: block;
-	
 }
 .vip .goods-text .cart{
 	position: absolute;
 	right: 0;
 	top:6rem;
-	  width: 3.0625rem
+    width: 3.0625rem
 }
 .boe{
 	margin-bottom: 0.625rem;
 }
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	body{
+		line-height: 1.6;
+	}
+	.shoplist{
+		padding: 0 0.9375rem;
+	}
+	.shop{
+		padding: 1.375rem 0;
+		position: relative;
+		background-color: #fff;
+		box-sizing: border-box;
+		border-bottom: 0.0625rem solid #f5f5f5;
+		display: flex;
+		}
+		.img{
+			width: 7.5rem;
+			height: 7.5rem;
+			margin-right:0.9375rem;
+			margin-left:0.3125rem;
+			position: relative;
+		}
+		.img img{
+			width:7.5rem;
+			height: 7.5rem;
+		}
+		.shoptitle{
+			position: relative;
+			flex: 1;
+		}
+		.shoptitle .listname{
+			margin-top: 0.625rem;
+		}
+		.shoptitle .listname p{
+			font-size: 1rem;
+			color: #474245;
+		}
+		.shoptitle .listname span{
+			font-size: 0.875rem;
+			color: #969696;
+		}
+		.shoptitle .quality {
+			line-height: 1.3125rem;
+			line-height: 1.3125rem;
+			height: 1.625rem;
+		}
+		.shoptitle .quality span{
+			display: inline-block;
+			border-radius: 0.125rem;
+			font-size: .75rem;
+			line-height: 1;
+			border: .0625rem solid #c6c6c6;
+			margin-right: .03125rem;
+			padding: 0.0625rem;
+			color: #c6c6c6;
+		}
+		/* 价格 */
+		.listprice{
+			margin-bottom: 0.625rem;                
+		}
+		.listprice .price{
+			font-size: 0.75rem;
+			line-height: 1;
+		}
+		.listprice .price p {
+			color: #ff4891;
+		}
+		.listprice .viprice{
+			line-height: 1;
+			color: #f8bc00;
+			font-size:  0.75rem;
+		}
+		.listprice .viprice span {
+			font-size: 1rem;
+			/* letter-spacing: -1px; */     
+		}
+		.cart{
+			position: absolute;
+			right: 0;
+			bottom:-.5rem;
+		}
+		.cart img{
+			width: 3.0625rem;
+		}
+		.shopnum{
+			position: absolute;
+			width: 5.625rem;
+			right: 0;
+			bottom: .5rem;
+			text-align: center;
+			/* display: flex; */
+			text-align: center;
+		}
+		.shopnum span{
+			width: 1.375rem;
+			height: 1.375rem;
+			border: 1px solid #ff4891;
+			line-height:  1.375rem;
+			border-radius: 50%;
+			text-align: center;
+			display: inline-block;
+			font-size: 0.75rem;
+			font-weight: bold;
+		}
+		.shopnum .raduce{
+			color: #ff4891;
+		}
+		.shopnum .add{
+			background-color: #ff4891;
+			color: #fff;
+		}
+		.shop .num{
+			font-size: 0.75rem;
+			text-align: center;
+			min-width: 1.5625rem;
+			vertical-align: text-bottom;
+			display: inline-block;
+					}
 </style>

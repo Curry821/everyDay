@@ -148,8 +148,8 @@
 
 <style scoped>
     	/*登录*/
-        ..checkMessage{
-            background-color: #fff;
+    .checkMessage{
+        background-color: #fff;
         }
 	.renew-header-bar{
 	padding: 5px;
