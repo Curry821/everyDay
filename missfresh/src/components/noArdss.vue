@@ -21,6 +21,8 @@
 
 			<div @click="show">您还没有收货地址请添加</div>
 
+			<div id="ditu" ></div>
+			<div @click="show">您还没有收货地址请添加</div>
 		</div>
 	<!-- 	<router-link to="/haveAdress"> -->
 		<div class="btn">
@@ -153,13 +155,6 @@
 </template>
 <script>
 	import Vue from 'vue';
-	// 定义全局组件
-	Vue.component('loginMine',{
-	template: `
-		
-	
-	
-	`})
 	//自动获取焦点事件
 	Vue.directive('focus',{
 	//绑定元素插入dom中
@@ -199,58 +194,6 @@
 
 				}
 			},
-			methods:{
-				show: function(){
-				this.shows = false;
-				this.adsshows = true
-				},
-				list: function () {
-					this.nolist = true;
-					this.adsshows = false
-					// this.haslist = false
-				},
-				// 点击添加
-				asd: function () {
-					this.nolist =false;
-					this.adsshows = true;
-					//清空输入框
-				
-				},
-				//点击编辑时候传入下标拿到下标
-				reviselist(index){
-					this.revise = true;
-					this.nolist = false;
-					this.indexNum = index;
-					//替换输入框中的内容
-					this.user.name = this.ads_list[index].msg_name;
-					this.user.phoneNum = this.ads_list[index].msg_phoneNum;
-					this.user.address = this.ads_list[index].msg_address;
-					this.user.addressNum = this.ads_list[index].msg_addressNum;
-
-				},
-				// 点击保存
-				addDate() {
-					var msglist = {
-							msg_name:this.name,
-							msg_phoneNum:this.phoneNum,
-							msg_address:this.address,
-							msg_assressNum:this.addressNum
-						};
-					this.ads_list.push(msglist)
-					// 构建地址信息
-				},
-				//点击修改的保存
-				reviseData(){
-					this.revise = false;
-					this.nolist = true;
-					//因为操作的是下标
-					this.ads_list[this.indexNum].msg_name = this.user.name;
-					this.ads_list[this.indexNum].msg_phoneNum = this.user.phoneNum;
-					this.ads_list[this.indexNum].msg_addressNum = this.user.addressNum;
-					this.ads_list[this.indexNum].msg_address = this.user.address;
-				}
-
-		},
 			mounted(){
 			//添加修改state数据
 			// this.$store.dispatch("addDate",new Date());
@@ -286,6 +229,54 @@
 
 		},
 		methods:{
+				show: function(){
+				this.shows = false;
+				this.adsshows = true
+				},
+				list: function () {
+					this.nolist = true;
+					this.adsshows = false
+					// this.haslist = false
+				},
+				// 点击添加
+				asd: function () {
+					this.nolist =false;
+					this.adsshows = true;
+					//清空输入框
+				},
+				//点击编辑时候传入下标拿到下标
+				reviselist(index){
+					this.revise = true;
+					this.nolist = false;
+					this.indexNum = index;
+					//替换输入框中的内容
+					this.user.name = this.ads_list[index].msg_name;
+					this.user.phoneNum = this.ads_list[index].msg_phoneNum;
+					this.user.address = this.ads_list[index].msg_address;
+					this.user.addressNum = this.ads_list[index].msg_addressNum;
+
+				},
+				// 点击保存
+				addDate() {
+					var msglist = {
+							msg_name:this.name,
+							msg_phoneNum:this.phoneNum,
+							msg_address:this.address,
+							msg_assressNum:this.addressNum
+						};
+					this.ads_list.push(msglist)
+					// 构建地址信息
+				},
+				//点击修改的保存
+				reviseData(){
+					this.revise = false;
+					this.nolist = true;
+					//因为操作的是下标
+					this.ads_list[this.indexNum].msg_name = this.user.name;
+					this.ads_list[this.indexNum].msg_phoneNum = this.user.phoneNum;
+					this.ads_list[this.indexNum].msg_addressNum = this.user.addressNum;
+					this.ads_list[this.indexNum].msg_address = this.user.address;
+				},
 			//调用地图的方法
 		 ditu() {
           let mapobj = new AMap.Map('ditu', {

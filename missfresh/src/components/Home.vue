@@ -95,12 +95,7 @@
 																	</div>
 																</div>
 																<div class="price-num">
-																	<img v-if="item.buy_permission == 0" src="../assets/img_20170425134548759.png" title="img_20170425134548759.png" alt="小购物车" @click="add(item)">
-																	<div v-else >
-																		<span class="jian" @click="down(id)"></span>
-																		<span class="number-item">{{item.nuo}}</span>
-																		<span class="jia" @click="up(id)"></span>
-																	</div>
+																	<img src="../assets/img_20170425134548759.png" title="img_20170425134548759.png" alt="小购物车" @click="add(item)">
 																</div>
 															</div>
 														</div>				
@@ -317,7 +312,7 @@
 
 			//添加到购物车的方法
 			add(item) {
-				this.$store.dispatch('add', item)
+				this.$store.dispatch('add', item);
 			},
 			search(){
 				this.modal = true;

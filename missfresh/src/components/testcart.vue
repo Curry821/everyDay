@@ -30,7 +30,7 @@
 								</div>
 								<div class="cart-group-free">
 									<a href="#">
-									 	<span v-if="totalPrice < 39">实付满39包邮,还差{{ (39-totalPrice).toFixed(1) }}元,去凑单</span>
+									 	<span v-if="totalPrice < 69">实付满69包邮,还差{{ (69-totalPrice).toFixed(1) }}元,去凑单</span>
 									 	<span v-else>免运费</span>
 									</a>
 								</div>
@@ -46,7 +46,7 @@
 										<span class="checkbox"></span>
 									</div>
 									<div class="list-item-content">
-										<img class="item-discount-img" :src="item.promote_tag" v-if="item.promote_tag!=''">
+										<img class="item-discount-img" :src="item.promote_tag">
 										<div class="item-image">
 											<img class="item-image-img" :src="item.image" v-show="item.image != 'unknown' ">
 										</div>
@@ -100,7 +100,7 @@
 								<span class="post-tip"></span>
 							</span>
 							<span class="item-price">
-								<span class="rmb">￥{{ totalPrice.toFixed(1) }}</span>
+								<span class="rmb">￥34.9</span>
 							</span>
 						</div>
 						<div class="list item-board">
@@ -111,16 +111,14 @@
 								</span>
 							</span>
 							<span class="item-price">
-								<span v-if='totalPrice<39'>￥10</span>
-								<span v-else>免邮</span>
+								￥10
 							</span>
 						</div>
 						<!-- 总价 -->
 						<div class="total-price">
 							<span>合计</span>
 							<span style='color:rgb(255,72,145);'>
-								￥<span v-if="totalPrice<39">{{ Number(totalPrice.toFixed(1))+10 }}</span>
-								<span v-else>{{ totalPrice.toFixed(1) }}</span>
+								<span>￥</span>44.9
 							</span>
 						</div>
 					</div>
@@ -136,11 +134,10 @@
 				<div class="fot-price foot-info">
 					<span class="total-price">
 						<span style="color:rgb(38, 38, 38);">合计</span>
-						<span style="color: rgb(255, 72, 145);">{{ Number(totalPrice.toFixed(1))+10 }}</span>
+						<span style="color: rgb(255, 72, 145);">￥44.9</span>
 					</span>
 					<span class="post-info">
-						<span style="color: rgb(150, 150, 150);" v-if='totalPrice<39'>￥10</span>
-						<span style="color: rgb(150, 150, 150);" v-else>免邮</span>
+						<span style="color: rgb(150, 150, 150);">运费￥10</span>
 					</span>
 				</div>
 				<div class="fot-price">
@@ -168,8 +165,8 @@
 				<h3 class="popup-title">你确定删除该商品么</h3>
 			</div>
 			<div class="popup-buttons">
-				<button class="button" @click="hide(selfItem)">取消</button>
-				<button class="button" @click="remove(selfItem)">确定</button>
+				<button class="button" @click="hide(item)">取消</button>
+				<button class="button" @click="remove(item)">确定</button>
 			</div>
 		</div>
 	</div>
@@ -180,8 +177,7 @@
 		name:'Cart',
 		data(){
 			return{
-				isShow:false,
-				selfItem:{}
+				isShow:false
 			}
 		},
 		mounted(){
@@ -235,7 +231,6 @@
 				this.$store.dispatch('down', item)
 				if(item.buy_permission == 0){
 					this.isShow = true;
-					this.selfItem = item;
 				}
 			},
 			remove(item){

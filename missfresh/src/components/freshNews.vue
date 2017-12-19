@@ -120,7 +120,7 @@
 			this.$http.get(this.url).then((res)=>{
 			console.log(res.data.data.discover_con_list);
 			this.proList = res.data.data.discover_con_list;
-			this.isload =false
+			this.isload =false;
 			});
 		},
 		mounted(){
@@ -162,9 +162,12 @@
 
 	
 </script>
-<style>
+<style scpoed>
 	*{
 	box-sizing: border-box;
+}
+img{
+	vertical-align: top;
 }
 html{
 	width: 100%;
@@ -266,7 +269,7 @@ div{
 	position: absolute;
 	width: 100%;
 	height: 5.5rem;
-    bottom: 0rem;
+    bottom: 0.3rem;
     border-radius: 0.1875rem;
     left:0;
 }

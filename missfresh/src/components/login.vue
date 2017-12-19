@@ -105,7 +105,7 @@
                         this. text = '手机号码格式不正确';
                         this. Phoneval = '';
                     }
-                    else if(this.Phoneval == '17610399682'){
+                    else if(this.Phoneval == '13345678900'){
                         if(this.speakNum == this.sendNum){
                             // alert('登陆成功');
                             // 这种方法不行他就刷一下
@@ -148,8 +148,8 @@
 
 <style scoped>
     	/*登录*/
-        ..checkMessage{
-            background-color: #fff;
+    .checkMessage{
+        background-color: #fff;
         }
 	.renew-header-bar{
 	padding: 5px;

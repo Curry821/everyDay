@@ -26,9 +26,6 @@
             </span>
             
         </router-link>
-         <router-link to="/map">
-            地图
-        </router-link>
     </div>
     <router-view></router-view>
   </div>
@@ -91,6 +88,7 @@ a,button,input,optgroup,select,textarea {
 }
 img{
     border: none;
+    text-shadow: none;
 }
 a, img {
     -webkit-touch-callout: none; 

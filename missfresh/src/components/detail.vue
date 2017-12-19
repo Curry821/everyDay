@@ -10,8 +10,7 @@
 							<button class="button back" @click="back()"></button>
 						</div>
 						<div class="title-list">
-							<div class="title-detail detail-title-active">商品详情</div>
-							<div class="title-safe">安心保障</div>
+							<div class="title-detail">商品详情</div>
 						</div>
 						<div class="share-img">
 							<img :src="products.product_share_icon">
@@ -93,7 +92,7 @@
 								<p class="share-new-count">{{products.product_share_info_v2.share_product_text}}</p>
 							</div>
 							<!-- 安心检测 -->
-							<div class="security" v-if="safePrints !='undefined'">
+							<div class="security" v-if="safePrints!= undefined ">
 								<p class="security-tit">{{ products.securityTitle}}</p>
 								<p class="security-txt">{{products.securityText}}</p>
 								<div class="scroll-view">
@@ -151,7 +150,7 @@
 					<div class="bar-footer bar-light product-bar-footer">
 						<div class="buttons">
 							 <span class="shopping-product"></span>
-							 <button class="orange">加入购物车</button>
+							 <button class="orange" @click="add(products)">加入购物车</button>
 						</div>
 					</div>
 				</div>
@@ -189,6 +188,10 @@
 			},
 			back(){
 				window.history.back();
+			},
+			//添加到购物车功能
+			add(item) {
+				this.$store.dispatch('add', item);
 			}
 		},
 		created(){
@@ -197,7 +200,8 @@
 				this.products = res.data;
 				this.Money = this.products.vip_card.back_cash_text.split('#_$');
 				this.safePrints = this.products.productFingerprints;
-				console.log(this.products)
+				console.log(this.safePrints)
+				// console.log(this.products)
 			})
 		},
 		computed:{
@@ -211,6 +215,9 @@
 	*{
 		box-sizing: border-box;
 		font-family: "-apple-system","Helvetica Neue",Roboto,"Segoe UI",sans-serif;
+	}
+	body{
+		font-size: 14px;
 	}
 	img{
 		vertical-align: middle;
@@ -280,18 +287,8 @@
 	    line-height: 36px;
 	    margin:0 auto;
 	}
-	.product-header .title-list .title-detail, .product-header .title-list .title-safe{
-		display: inline-block;
-		border-bottom: 3px solid transparent;
-		color: #262626;
-	}
 	.product-header .title-list .title-detail{
 		margin-right: 15px;
-	}
-	/*被选中的状态*/
-	.product-header .title-list .detail-title-active{
-		border-bottom-color: #ff4891;
-		color: #ff4891;
 	}
 	.product-header .share-img {
 	    line-height: 34px;
