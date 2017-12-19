@@ -16,16 +16,13 @@
 		</div>
 		<!-- 没有收获地址得时候 -->
 		<div class="not-address">
-<<<<<<< HEAD
 
 			<div id="ditu" ></div>
 
 			<div @click="show">您还没有收货地址请添加</div>
 
-=======
 			<div id="ditu" ></div>
 			<div @click="show">您还没有收货地址请添加</div>
->>>>>>> dev
 		</div>
 	<!-- 	<router-link to="/haveAdress"> -->
 		<div class="btn">
@@ -158,13 +155,6 @@
 </template>
 <script>
 	import Vue from 'vue';
-	// 定义全局组件
-	Vue.component('loginMine',{
-	template: `
-		
-	
-	
-	`})
 	//自动获取焦点事件
 	Vue.directive('focus',{
 	//绑定元素插入dom中
@@ -204,7 +194,41 @@
 
 				}
 			},
-			methods:{
+			mounted(){
+			//添加修改state数据
+			// this.$store.dispatch("addDate",new Date());
+			//动态获取适配窗口宽度
+			(function (doc, win) {
+			  var docEl = win.document.documentElement;
+			  var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+			  /**
+			    * ================================================
+			    *   设置根元素font-size
+			    * 当设备宽度为375(iPhone6)时，根元素font-size=50px; 
+			    × ================================================
+			    */
+			  var refreshRem = function () {
+			    var clientWidth = win.innerWidth
+			                      || doc.documentElement.clientWidth
+			                      || doc.body.clientWidth;
+
+			    console.log(clientWidth)
+			    if (!clientWidth) return;
+			    var fz;
+			    var width = clientWidth;
+			    fz = 50 * width / 375;
+			    docEl.style.fontSize = fz + 'px';
+			  };
+
+			  if (!doc.addEventListener) return;
+			  win.addEventListener(resizeEvt, refreshRem, false);
+			  doc.addEventListener('DOMContentLoaded', refreshRem, false);
+			  refreshRem();
+
+			})(document, window);
+
+		},
+		methods:{
 				show: function(){
 				this.shows = false;
 				this.adsshows = true
@@ -253,44 +277,7 @@
 					this.ads_list[this.indexNum].msg_phoneNum = this.user.phoneNum;
 					this.ads_list[this.indexNum].msg_addressNum = this.user.addressNum;
 					this.ads_list[this.indexNum].msg_address = this.user.address;
-				}
-
-		},
-			mounted(){
-			//添加修改state数据
-			// this.$store.dispatch("addDate",new Date());
-			//动态获取适配窗口宽度
-			(function (doc, win) {
-			  var docEl = win.document.documentElement;
-			  var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
-			  /**
-			    * ================================================
-			    *   设置根元素font-size
-			    * 当设备宽度为375(iPhone6)时，根元素font-size=50px; 
-			    × ================================================
-			    */
-			  var refreshRem = function () {
-			    var clientWidth = win.innerWidth
-			                      || doc.documentElement.clientWidth
-			                      || doc.body.clientWidth;
-
-			    console.log(clientWidth)
-			    if (!clientWidth) return;
-			    var fz;
-			    var width = clientWidth;
-			    fz = 50 * width / 375;
-			    docEl.style.fontSize = fz + 'px';
-			  };
-
-			  if (!doc.addEventListener) return;
-			  win.addEventListener(resizeEvt, refreshRem, false);
-			  doc.addEventListener('DOMContentLoaded', refreshRem, false);
-			  refreshRem();
-
-			})(document, window);
-
-		},
-		methods:{
+				},
 			//调用地图的方法
 		 ditu() {
           let mapobj = new AMap.Map('ditu', {
