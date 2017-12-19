@@ -14,9 +14,9 @@
 			</div>
 			<div class="not-address">
 			<div>
-				您还没有收货地址请天假
+				您还没有收货地址请添加
 			</div>
-			<div>
+			<div @click="add">
 				添加订单
 			</div>
 		</div>
@@ -24,8 +24,19 @@
 </div>
 </template>
 <script>
-	
+	export default {
+		data(){
+			return{
+			}
+		},
+		methods:{
+			add(){
+				this.$router.push({path:'/home'});
+			}
+		}
+	}
 </script>
+
 <style scoped>
 body{
 	height: 100%;
