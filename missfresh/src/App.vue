@@ -88,6 +88,7 @@ a,button,input,optgroup,select,textarea {
 }
 img{
     border: none;
+    text-shadow: none;
 }
 a, img {
     -webkit-touch-callout: none; 

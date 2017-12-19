@@ -95,12 +95,7 @@
 																	</div>
 																</div>
 																<div class="price-num">
-																	<img v-if="item.buy_permission == 0" src="../assets/img_20170425134548759.png" title="img_20170425134548759.png" alt="小购物车" @click="add(item)">
-																	<div v-else>
-																		<span class="jian" @click="down(item)"></span>
-																		<span class="number-item">{{item.buy_permission}}</span>
-																		<span class="jia" @click="up(item)"></span>
-																	</div>
+																	<img src="../assets/img_20170425134548759.png" title="img_20170425134548759.png" alt="小购物车" @click="add(item)">
 																</div>
 															</div>
 														</div>				
@@ -313,8 +308,7 @@
 
 			//添加到购物车的方法
 			add(item) {
-				this.$store.dispatch('add', item)
-				item.buy_permission = 1;
+				this.$store.dispatch('add', item);
 			},
 			search(){
 				this.modal = true;
@@ -333,12 +327,6 @@
 			},
 			fn(){
 				console.log(this.searchTxt.length)
-			},
-			up(item){
-				item.buy_permission++;
-			},
-			down(item){
-				item.buy_permission--;
 			},
 			// 点击图片跳转商品详情
 			push(sku){

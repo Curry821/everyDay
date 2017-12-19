@@ -150,7 +150,7 @@
 					<div class="bar-footer bar-light product-bar-footer">
 						<div class="buttons">
 							 <span class="shopping-product"></span>
-							 <button class="orange">加入购物车</button>
+							 <button class="orange" @click="add(products)">加入购物车</button>
 						</div>
 					</div>
 				</div>
@@ -188,6 +188,10 @@
 			},
 			back(){
 				window.history.back();
+			},
+			//添加到购物车功能
+			add(item) {
+				this.$store.dispatch('add', item);
 			}
 		},
 		created(){
@@ -211,6 +215,9 @@
 	*{
 		box-sizing: border-box;
 		font-family: "-apple-system","Helvetica Neue",Roboto,"Segoe UI",sans-serif;
+	}
+	body{
+		font-size: 14px;
 	}
 	img{
 		vertical-align: middle;
