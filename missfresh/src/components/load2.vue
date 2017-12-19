@@ -1,8 +1,8 @@
 <template>
     <div>
         <div class="img">
-            <!-- <img src="static/load.ico" alt=""> -->
-          <h2>Loading......</h2>
+         <img src="https://static-as.missfresh.cn/frontend/img/loading-gif-vip.gif" alt="">
+          <!-- <h2>Loading......</h2> -->
         </div>
     </div>
 </template>
@@ -34,9 +34,9 @@ export default {
         justify-content: center;
         align-items: center;
     }
-    .img h2{
+    /* .img h2{
         font-size:0.6rem;
     }
-    
+     */
 </style>
 

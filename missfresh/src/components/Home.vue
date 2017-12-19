@@ -320,10 +320,15 @@
 			},
 			// 关闭广告条
 			closeApp(){
+				this.show.theLog = '';
+				this.slogo = false;
 				this.homeGuide = false;
+				
 			},
 			//返回首页
 			back(){
+				// this.show.theLog = '';
+				this.slogo = false;
 				this.modal = false;
 			},
 			// 清空搜索框
