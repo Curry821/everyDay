@@ -16,11 +16,11 @@
 		</div>
 		<!-- 没有收获地址得时候 -->
 		<div class="not-address">
-<<<<<<< HEAD
+
 			<div id="ditu" ></div>
-=======
+
 			<div @click="show">您还没有收货地址请添加</div>
->>>>>>> 1367a4f1cc862aa49ddb889bfcabc2f426f6a6ce
+
 		</div>
 	<!-- 	<router-link to="/haveAdress"> -->
 		<div class="btn">
@@ -320,8 +320,8 @@
 
 			mapobj.addControl(geolocation);
 			geolocation.getCurrentPosition();
-			AMap.event.addListener(geolocation, 'complete', onComplete);//返回定位信息
-			AMap.event.addListener(geolocation, 'error', onError);      //返回定位出错信息
+			AMap.event.addListener(geolocation, 'complete');//返回定位信息
+			AMap.event.addListener(geolocation, 'error');      //返回定位出错信息
 		});
 
   }

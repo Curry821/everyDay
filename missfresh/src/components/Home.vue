@@ -1,5 +1,6 @@
 <template>
 	<div id="home">
+	<Load2 v-if = 'isShow' />
 		<!-- 首页主体 -->
 		<div class="tab-home">
 			<!-- 顶部 广告+地址+导航 -->
@@ -130,7 +131,7 @@
 						<!-- 搜索框 -->
 						<div class="search-top">
 							<img class="search-button" src="https://static-as.missfresh.cn/frontend/img/icon-search.png">
-							<input type="text" class="search-keyword" placeholder="请输入商品名称" v-model="searchTxt">
+							<input type="text" class="search-keyword" placeholder="请输入商品名称" ref="theLog"  v-model="show.theLog">
 							<img class="clear-button" src="https://static-as.missfresh.cn/frontend/img/clean-key-word.png" @click="clear()" v-if="this.searchTxt.length > 0">
 						</div>
 						<!-- 搜索 -->
@@ -144,20 +145,21 @@
 								<span>热门搜索</span>
 							</div>
 							<div class="search-keyword-txt">
-								<span>中秋</span>
-								<span>中秋</span>
-								<span>榴莲</span>
-								<span>榴莲</span>
-								<span>中秋</span>
-								<span>中秋</span>
-								<span>中秋</span>
-								<span>中秋</span>
+								<span v-for='items in zhong'>{{ items }}</span>
+
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="ev-foodList" v-show = 'slogo'>
+            	<ul>
+            		<li v-for = "(itemFood,index) in foodlist">
+            			<a href="#">{{itemFood.displayName}}</a>
+            		</li>
+            	</ul>
+            </div>
 	</div>
 </template>
 
@@ -165,6 +167,7 @@
 	import navItem from './navItem'
 	import listItem from './listItem'
 	import typeItem from './typeItem'
+	import Load2 from './load2'
 	// import detail from './detail'
 	import {swiper,swiperSlide} from 'vue-awesome-swiper'
 	export default{
@@ -174,7 +177,8 @@
 			listItem,
 			typeItem,
 			swiper,
-			swiperSlide
+			swiperSlide,
+			Load2
 		},
 		mounted(){
 			//动态获取适配窗口宽度
@@ -210,9 +214,18 @@
 		data(){
 			return{
 				url:'./static/json/home.json',
+				searchTxt:'',
 				categoryList:[],
+				zhong:[],
+				foodlist:[],
+				slogo:false,
 				productList:[],
 				banners:[],
+				isShow:true,
+				inputInfo:'',
+				show: {
+					theLog: ""
+				},
 				// 轮播图属性
 				swiperOption:{
 					notNextTick:true,
@@ -227,6 +240,45 @@
 				searchTxt:'',
 				noData:''
 			}
+		},
+		watch: {
+		//实现模糊查询
+            show: {        
+            	handler(newVal, oldVal) {
+            		var t = this.$refs.theLog.value;
+
+        	 		if (t != '') {
+
+        	 		this.slogo = true
+        	 				this.$http.get('https://as-vip.missfresh.cn/search/hint/',{
+			 		params: {	
+			 		access_token:'enlLNmYyb3hVNWZSSXhrZ0Z2TjV6eERScnp3Qjh5R0tWQTZmYkNtZU56Yz0=',
+					device_id:'ef26073a8d6a909f984e738fec0ad979',
+					env:'web',
+					fromSource:'zhuye',
+					kw: t,
+					platform:'web',
+					tdk:151365190572886797563,
+					uuid:'ef26073a8d6a909f984e738fec0ad979',
+					version:'4.0.0.1'		
+			 		
+					}
+		 			}).then((res) => {					
+						this.foodlist = res.data.data[0].active_item
+		
+							})
+					} else {
+						this.slogo = false
+					}
+
+
+                //   console.log(this.$refs.theLog.value);
+            	},
+            	deep: true      //深度查询
+        	 	
+
+            }
+            
 		},
 		created(){
 			this.$http.get(this.url,{}).then((res)=>{
@@ -248,9 +300,17 @@
 						}
 					}
 				}
+				this.isShow = false
 			});
+						this.$http.get("https://as-vip.missfresh.cn/v3/product/searchhotwords/?access_token=enlLNmYyb3hVNWZSSXhrZ0Z2TjV6eERScnp3Qjh5R0tWQTZmYkNtZU56Yz0%3D&device_id=ef26073a8d6a909f984e738fec0ad979&env=web&fromSource=zhuye&platform=web&tdk=151360448341038846978&uuid=ef26073a8d6a909f984e738fec0ad979&version=4.0.0.1")
+			.then((res) => {
+				this.zhong = res.data.data;
+				// console.log(this.zhong)
+			})
+
 		},
 		methods:{
+
 			//添加到购物车的方法
 			add(item) {
 				this.$store.dispatch('add', item)
@@ -915,5 +975,31 @@
 		padding:0 10px;
 		background: #f6f5f5;
 		border-radius: 4px;
+	}
+	.ev-foodList{
+	position: fixed;
+	width:100%;
+	left:0;
+	top:45px;
+	background-color: #fff;
+	z-index: 11;
+	}
+	.ev-foodList ul{
+		width:100%;
+		margin-left: 5%;
+	}
+	.ev-foodList li{
+		width:90%;
+		height:45px;
+		line-height: 45px;
+		border-bottom: 1px solid #bbb;
+		padding-left: 5px;
+	}
+	.ev-foodList li a{
+		 color:#828282;
+		 font-size: 16px;
+	}
+	.ev-foodList li:last-of-type{
+	  border-bottom: none;
 	}
 </style>
