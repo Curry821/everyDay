@@ -48,7 +48,7 @@
 				<!-- 主体 -->
 				<div class="main-wrap" :class="{up:homeGuide}">
 					<!-- 提示信息 -->
-					<div class="jisuda-tip tip">
+					<div class="jisuda-tip tip" v-show = 'autoDisa' >
 						<span class="tip-content">下单次日送达</span>
 					</div>
 					<!-- 主体内容 -->
@@ -218,6 +218,7 @@
 				categoryList:[],
 				zhong:[],
 				foodlist:[],
+				autoDisa:true,
 				slogo:false,
 				productList:[],
 				banners:[],
@@ -281,6 +282,9 @@
             
 		},
 		created(){
+			 setTimeout(() => {
+					this.autoDisa = false
+				},5000);
 			this.$http.get(this.url,{}).then((res)=>{
 				// 导航数据
 				this.categoryList = res.data.category_list;
@@ -378,6 +382,9 @@
 			swiper(){
 				return this.$refs.hotSwiper.swiper
 			}
+
+
+			
 		}
 	}
 
