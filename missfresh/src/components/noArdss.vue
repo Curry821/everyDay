@@ -16,11 +16,16 @@
 		</div>
 		<!-- 没有收获地址得时候 -->
 		<div class="not-address">
+<<<<<<< HEAD
 
 			<div id="ditu" ></div>
 
 			<div @click="show">您还没有收货地址请添加</div>
 
+=======
+			<div id="ditu" ></div>
+			<div @click="show">您还没有收货地址请添加</div>
+>>>>>>> dev
 		</div>
 	<!-- 	<router-link to="/haveAdress"> -->
 		<div class="btn">
