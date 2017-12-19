@@ -27,7 +27,7 @@
 										<img :src="img">
 									</swiper-slide>
 								</swiper>
-								<div class="promotion-tag">
+								<div class="promotion-tag" v-if="products.promote_tag != ''">
 									<img :src="products.promote_tag">
 								</div>
 								<!-- 商品信息 -->
@@ -93,7 +93,7 @@
 								<p class="share-new-count">{{products.product_share_info_v2.share_product_text}}</p>
 							</div>
 							<!-- 安心检测 -->
-							<div class="security">
+							<div class="security" v-if="safePrints !='undefined'">
 								<p class="security-tit">{{ products.securityTitle}}</p>
 								<p class="security-txt">{{products.securityText}}</p>
 								<div class="scroll-view">
@@ -116,7 +116,7 @@
 							</div>
 							<!-- 商品规格详情 -->
 							<div class="graphic-details">
-								<h4></h4>
+								<h4>商品详情</h4>
 								<div class="content-detail">
 									<div class="detail-item">
 										规格：<span class="detail-info">{{products.unit}}</span>
@@ -136,6 +136,7 @@
 										<span class="detail-info">{{products.storage_method}}</span>
 									</div>
 								</div>
+								<!-- 商品图片 -->
 								<div class="picture" v-for="(img, index) in products.instruction">
 									<img :src="img.image">
 								</div>
@@ -159,6 +160,7 @@
 	</div>
 </template>
 <script>
+	import {swiper,swiperSlide} from 'vue-awesome-swiper'
 	export default{
 		data(){
 			return{
@@ -194,13 +196,13 @@
 				// 当前商品数据
 				this.products = res.data;
 				this.Money = this.products.vip_card.back_cash_text.split('#_$');
-				this.safePrints = this.products.productFingerprints
+				this.safePrints = this.products.productFingerprints;
 				console.log(this.products)
 			})
 		},
 		computed:{
 			swiper(){
-				return this.$refs.ProductSwiper.swiper	
+				return this.$refs.ProductSwiper.swiper
 			}
 		}
 	}
@@ -230,11 +232,66 @@
 	.pane{
 		background-color: #f9f9f9;
 	}
-	.product-detail-page .product-header .title {
-	    font-size: 17px;
-	    color: #4b4b4b;
-	    left: 46px;
-	    right: 46px;
+	/*头部标题*/
+	.product-header{
+		background-color: #fff;
+		color: #4b4b4b;
+		box-shadow: 0 0 10px rgba(0,0,0,0.06);
+		position: relative;
+		z-index: 1;
+	}
+	.bar{
+		display: flex;
+		width: 100%;
+		height: 44px;
+		padding:5px;
+	}
+	/*左侧返回按钮*/
+	.product-header .buttons-left{
+		position: absolute;
+		line-height: 34px;
+	}
+	.buttons>.button{
+		min-height: 31px;
+		line-height: 32px;
+		z-index: 1;
+		padding: 0 8px;
+		min-width: initial;
+	}
+	.product-header .buttons-left .back{
+		background: url(../assets/login-back.png) center left no-repeat;
+		background-size: 20px;
+		border-color: transparent;
+		margin:0 0 0 10px;
+		font-size: 16px;
+		padding-left: 16px;
+	}
+	.button:after {
+		position: absolute;
+		top: -6px;
+		right: -6px;
+		bottom: -6px;
+		left: -6px;
+		content: '';
+	}
+	/*中间的标题*/
+	.product-detail-page .product-header .title-list {
+	    font-size: 16px;
+	    line-height: 36px;
+	    margin:0 auto;
+	}
+	.product-header .title-list .title-detail, .product-header .title-list .title-safe{
+		display: inline-block;
+		border-bottom: 3px solid transparent;
+		color: #262626;
+	}
+	.product-header .title-list .title-detail{
+		margin-right: 15px;
+	}
+	/*被选中的状态*/
+	.product-header .title-list .detail-title-active{
+		border-bottom-color: #ff4891;
+		color: #ff4891;
 	}
 	.product-header .share-img {
 	    line-height: 34px;
@@ -267,68 +324,76 @@
 		background-color: #fff;
 	}
 	/*-------------------------商品轮播图----------------------------*/
-	.product-detail .swiper-slide img{
-		width: 50%;
-		display: block;
-		margin:0 auto;
+	.swiper-container{
+		overflow-x: hidden;
 	}
+	.swiper-wrapper{
+		height: 100%;
+	}
+	.swiper-slide{
+		float: left;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.swiper-slide img{
+		width: 65%;
+		margin:0 auto;
+		display: block;
+		max-height: 400px;
+	}
+
+
 	.product-detail-page .scroll-content{
 		top:40px;
 		background: #fff;
 	}
 	.product-detail .promotion-tag {
 	    position: absolute;
-	    top: 0;
+	    top: 30px;
 	    left: 10px;
 	}
 	.product-detail .promotion-tag img {
 	    height: 44px;
 	}
-	.product-detail .textures{
-		/*background: url(../img/product-bg.png) no-repeat;*/
-		background-size: 100% 106%;
-	}
 	.product-detail .textures .box {
-	    margin-left: 20px;
-	    padding-left: 5px;
-	    padding-right: 22px;
+	    padding:0 15px;
 	}
 	.product-detail .textures .title {
-	    padding-top: 32px;
-	    padding-bottom: 16px;
-	    overflow: hidden;
-	}
-	.product-detail .textures .title .mark-img {
-	    width: 13px;
-	    height: 13px;
-	    vertical-align: super;
+	    padding-top: 20px;
+	    padding-bottom: 2px;
+	   line-height: 28px;
 	}
 	.product-detail .textures .title .title-product {
-	    font-size: 21px;
-	    color: #969696;
+	    font-size: 20px;
+	    color: #474245;
+	    font-weight: 700;
 	}
 	.product-detail .textures h2 {
 	    font-size: 16px;
-	    color: #262626;
-	    margin: 0;
-	    padding-bottom: 6px;
-	    font-weight: 500;
+	    color: #474245;
+	    margin-bottom: 14px;
+	    font-weight: 400;
 	}
 	.product-detail .textures p {
 	    margin: 0;
-	    color: rgb(255, 72, 145);
+	    font-size: 100%;
+	}
+	.product-detail .price-sub{
+		text-decoration: line-through;
+		color: rgb(150,150,150);
+	}
+	.price-sub .price-product{
+		font-size: 16px;
 	}
 	.product-detail .textures .price-box {
 	    color: #ff4891;
 	    font-size: 22px;
-	    border-bottom: 1px solid #f5f5f5;
-	    padding-bottom: 8px;
 	}
 	.product-detail .textures .price-box .price-red {
-	    color: rgb(248, 188, 0);
+	    color: rgb(255, 72, 145);
 	    font-size: 21px;
 	    line-height: 20px;
-	    padding-right: 5px;
 	    padding-bottom: 15px;
 	}
 	.product-detail .textures .price-box .price-product{
@@ -341,72 +406,36 @@
 	    color: #969696;
 	    font-size: 12px;
 	    float: right;
+	    vertical-align: middle;
+	    display: inline-block;
 	}
+	/*商品标签*/
 	.product-detail .textures .product-news {
 	    width: 100%;
-	    height: 44px;
-	    line-height: 44px;
+	    height: 40px;
+	    margin-bottom: 15px;
+	    overflow:hidden;
 	}
 	.product-detail .textures .product-news .product-model {
-	    color: #4c4440;
-	    line-height: 24px;
-	    font-size: 13px;
+	    display: inline-block;
+	    line-height: 40px;
+	    font-size: 12px;
+	    color: #262626;
 	    border-top: none;
 	}
-	.product-detail .textures .product-news .product-mess {
-	    line-height: 44px;
-	    width: 33%;
-	    float: left;
-	    color: #969696;
-	    display: block;
-	    white-space: nowrap;
-	    overflow: hidden;
-	    -ms-text-overflow: ellipsis;
-	    text-overflow: ellipsis;
-	    text-align: left;
+	.product-detail .textures .product-news .product-model:before{
+		content: ' ';
+		display: inline-block;
+		width: 3px;
+		height: 3px;
+		background-color: #262626;
+		border-radius: 50%;
+		vertical-align: middle;
+		margin-right: 2px;
 	}
-<<<<<<< HEAD
-=======
-	.product-detail .textures .product-news .product-mess img {
-	    width: 18px;
-	    vertical-align: sub;
+	.product-detail .textures .product-news .product-model +.product-model{
+		margin-left: 20px;
 	}
-	.product-detail .textures .product-news .sale-volume {
-	    text-align: center;
-	    line-height: 44px;
-	    width: 33%;
-	    float: left;
-	    color: #969696;
-	    display: block;
-	    white-space: nowrap;
-	    overflow: hidden;
-	    -ms-text-overflow: ellipsis;
-	    text-overflow: ellipsis;
-	}
-	.product-detail .textures .product-news .sale-volume img {
-	    width: 18px;
-	}
-	.product-detail .textures .product-news .product-message {
-	    line-height: 44px;
-	    width: 33%;
-	    float: left;
-	    color: #969696;
-	    display: block;
-	    white-space: nowrap;
-	    overflow: hidden;
-	    -ms-text-overflow: ellipsis;
-	    text-overflow: ellipsis;
-	    text-align: right;
-	}
-	.product-detail .textures .product-news .product-message img {
-	    width: 18px;
-	    vertical-align: sub;
-	}
-	.product-detail .textures .product-news .product-model span.tag {
-	    color: #969696;
-	    font-size: 12px;
-	}
->>>>>>> ef40d16edbd85d943efd0027edf6758665fc89a7
 	/*--------------------------优惠活动-----------------------------*/
 	.product-membercard {
 		width: 100%;
@@ -637,7 +666,6 @@
 	}
 	.product-bar-footer .buttons .shopping-product {
 	    padding: 0 11px 0 19px;
-	    /*background: url(../img/shop-icon.png) center no-repeat;*/
 	    background-size: 22px 22px;
 	    display: block;
 	    color: #fff;
