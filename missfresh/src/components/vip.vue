@@ -160,11 +160,19 @@
 	}
 	// zi
 </script>
+<<<<<<< HEAD
+<style scoped>	
+=======
 <style scoped>
+>>>>>>> 21f0f5c4f6fc1d3f996210fb1aad96b3637c7871
 *{
 	margin:0;
 	padding:0;
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 21f0f5c4f6fc1d3f996210fb1aad96b3637c7871
 html{
 	width: 100%;
 	height: 100%;

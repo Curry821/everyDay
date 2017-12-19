@@ -162,9 +162,12 @@
 
 	
 </script>
-<style>
+<style scpoed>
 	*{
 	box-sizing: border-box;
+}
+img{
+	vertical-align: top;
 }
 html{
 	width: 100%;
