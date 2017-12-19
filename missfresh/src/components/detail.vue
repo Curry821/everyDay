@@ -149,7 +149,9 @@
 					<!-- 固定底部 -->
 					<div class="bar-footer bar-light product-bar-footer">
 						<div class="buttons">
-							 <span class="shopping-product"></span>
+							 <span class="shopping-product" @click="goCart()">
+							 	<span class="shopping-price" v-if="totalCount > 0">{{totalCount}}</span>
+							 </span>
 							 <button class="orange" @click="add(products)">加入购物车</button>
 						</div>
 					</div>
@@ -192,6 +194,12 @@
 			//添加到购物车功能
 			add(item) {
 				this.$store.dispatch('add', item);
+			},
+			// 跳转至购物车
+			goCart(){
+				this.$router.push({
+					path:'/cart'
+				})
 			}
 		},
 		created(){
@@ -207,7 +215,10 @@
 		computed:{
 			swiper(){
 				return this.$refs.ProductSwiper.swiper
-			}
+			},
+			totalCount(){
+            	return this.$store.getters.totalCount;
+        	}
 		}
 	}
 </script>
@@ -217,7 +228,7 @@
 		font-family: "-apple-system","Helvetica Neue",Roboto,"Segoe UI",sans-serif;
 	}
 	body{
-		font-size: 14px;
+		font-size: 14px!important;
 	}
 	img{
 		vertical-align: middle;
@@ -678,5 +689,24 @@
 	.product-bar-footer .buttons button.orange {
 	    background: #ff4891;
 	    left: 0;
+	}
+	.product-bar-footer .shopping-product{
+		padding: 0 11px 0 19px;
+		background: url(../assets/shop-icon.png) center no-repeat;
+		background-size: 22px 22px;
+		display: block;
+		color: #fff;
+		width: 54px;
+	}
+	.shopping-product .shopping-price {
+	    position: absolute;
+	    background: #ff4891;
+	    padding: 0 3px;
+	    border-radius: 30px;
+	    top: 2px;
+	    left: 30px;
+	    font-size: 12px;
+	    min-width: 20px;
+	    text-align: center;
 	}
 </style>

@@ -202,11 +202,11 @@
 		}
 	}
 </script>
-<style>
+<style scoped>
 	.mine{
 		width: 100%;
 		height: 100%;
-		line-height:20px ;
+		line-height:20px;
 		font-size: 14px;
 		display: block;
 	}
@@ -230,7 +230,7 @@
 		width: 74px;
 		height: 74px;
 	}
-	.mine .name-top:{
+	.mine .name-top{
 		display: inline-block;
 		height: 24px;
 		vertical-align: middle;
@@ -413,6 +413,4 @@
 		font-family: "宋体";
 		color: #9b9b9b;
 	}
-
-
 </style>

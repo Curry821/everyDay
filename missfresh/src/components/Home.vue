@@ -163,7 +163,6 @@
 	import listItem from './listItem'
 	import typeItem from './typeItem'
 	import Load2 from './load2'
-	// import detail from './detail'
 	import {swiper,swiperSlide} from 'vue-awesome-swiper'
 	export default{
 		name:'Home',
@@ -226,6 +225,7 @@
 				swiperOption:{
 					notNextTick:true,
 					autoplay:2500,
+					autoplayStopOnLast:true,
 					autoplayDisableOnInteraction:false,
 					grabCursor:true,
 					autoHeight:true,
@@ -388,6 +388,9 @@
 <style scoped>
 	*{
 		box-sizing: border-box;
+	}
+	body{
+		font-size: 14px!important;
 	}
 	img{
 		vertical-align: middle;
@@ -884,6 +887,7 @@
 		min-height: 100%;
 		width: 100%;
 		background: #fff;
+		font-size: 14px;
 	}
 	.modal .bar-header{
 		display: flex;

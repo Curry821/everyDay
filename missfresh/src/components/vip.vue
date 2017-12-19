@@ -47,31 +47,31 @@
 									单单返现5%无上限
 								</div> 
 								<div class="money">
-									¥175.20
+									¥4.26
 								</div>
 							</div>	
 							<!-- 2 -->
 							<div class="p2">
 								<div class="save">
-									购物返现
+									会员专享价
 								</div> 
 								<div class="go-back">
-									单单返现5%无上限
+									优惠商品最高优惠50%
 								</div> 
 								<div class="money">
-									¥175.20
+									¥15.40
 								</div>
 							</div>	
 							<!-- 3 -->
 							<div class="p2">
 								<div class="save">
-									购物返现
+									优惠红包
 								</div> 
 								<div class="go-back">
-									单单返现5%无上限
+									各种优惠享不停
 								</div> 
 								<div class="money">
-									¥175.20
+									¥60.00
 								</div>
 							</div>	
 						</div>

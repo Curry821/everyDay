@@ -1,7 +1,7 @@
 <template>
 <div id="freshNews">
 	<load v-show="isload"></load>	
-	<scroller class="fresh-news" on-refresh="refresh" :on-infinite="infinite" ref="myscroller">
+	<scroller class="fresh-news" :on-refresh="refresh" :on-infinite="infinite" ref="myscroller">
 		<!-- 头部小白条 -->
 		<div class="fresh-news-header">
 
@@ -118,9 +118,9 @@
 		created(){
 			// 使用axio 插件请求数据
 			this.$http.get(this.url).then((res)=>{
-			console.log(res.data.data.discover_con_list);
-			this.proList = res.data.data.discover_con_list;
-			this.isload =false;
+				console.log(res.data.data.discover_con_list);
+				this.proList = res.data.data.discover_con_list;
+				this.isload =false;
 			});
 		},
 		mounted(){
@@ -167,7 +167,7 @@
 	box-sizing: border-box;
 }
 img{
-	vertical-align: top;
+	/*vertical-align: top;*/
 }
 html{
 	width: 100%;
@@ -189,6 +189,7 @@ div{
 	height: 100%;
 	padding: 0 0.9375rem;
     margin-bottom: 0.625rem;
+    background: #fff;
 }
 /*头部小白条*/
 .fresh-news-header{

@@ -22,9 +22,9 @@
 					<div class="item-group">
 						<div class="cart-group">
 							<div class="list">
-								<div class="cart-group-all">
+								<!-- <div class="cart-group-all">
 									<span class="checkbox"></span>
-								</div>
+								</div> -->
 								<div class="cart-group-title">
 									<span>次日达</span>
 								</div>
@@ -42,9 +42,9 @@
 						<div class="cart">
 							<div class="list">
 								<div class="shop-item list-item item item-content-product" v-for="(item,index) in orderList" :key="item.id">
-									<div class="checkbox-wrapper">
+									<!-- <div class="checkbox-wrapper">
 										<span class="checkbox"></span>
-									</div>
+									</div> -->
 									<div class="list-item-content">
 										<img class="item-discount-img" :src="item.promote_tag" v-if="item.promote_tag!=''">
 										<div class="item-image">
@@ -127,12 +127,12 @@
 				</div>
 			</div>
 			<div class="cart-footer bg-f">
-				<div class="price-num price-left">
+				<!-- <div class="price-num price-left">
 					<div class="checkbox-wrapper check-left">
 						<span class="checkbox check"></span>
 					</div>
 					<span class="all">全选</span>
-				</div>
+				</div> -->
 				<div class="fot-price foot-info">
 					<span class="total-price">
 						<span style="color:rgb(38, 38, 38);">合计</span>
@@ -254,13 +254,13 @@
 	    vertical-align: middle;
 	}
 </style>
-<style>
+<style scoped>
 	*{
 	    box-sizing: border-box;
 	}
 	
 	body{
-		background: #f9f9f9;
+		/*background: #f9f9f9;*/
 	}
 /*===============购物车=============*/
 	.tab-cart{
@@ -283,6 +283,7 @@
 	}
 	.pane {
 	    background-color: #F9F9F9;
+	    /*font-size: 14px;*/
 	}
 	/*==========顶部广告条=========*/
 	.list {
@@ -769,6 +770,7 @@
 	    height: 49px;
 	    line-height: 15px;
 	    overflow: hidden;
+	    padding: 0 0 0 15px;
 	}
 	.cart-footer .foot-info .total-price {
 	    margin-top: 10px;
